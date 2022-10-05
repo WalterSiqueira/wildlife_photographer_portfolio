@@ -1,0 +1,46 @@
+.MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        '. . .'
+        '. title .'
+        '. inputContainer .'
+        '. taskListContainer .'
+        '. . .';
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 4fr 0.5fr;
+}
+    .title {
+        grid-area: title;
+        width: 100%;
+        height: 100%;
+    }
+    .formBox { 
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas: 
+            '. . . .'
+            '. inputBar plusBtn .'
+            '. . . .';
+        grid-template-columns: 0.3fr 1fr 0.5fr 0.3fr;
+        grid-template-rows: 0.3fr 1fr 0.3fr;
+    }
+    .inputContainer {
+        grid-area: inputContainer;
+        width: 100%;
+        height: 100%;
+    }
+        .inputBar {
+            grid-area: inputBar;
+        }
+        
+        .addbtn {
+            grid-area: plusBtn;
+        }
+        .plusIcon {
+            width: 100%;
+            height: 100%;
+            color: red;
+        }
