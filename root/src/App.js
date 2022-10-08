@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Form from './Components/Form/Form.js';
+import TaskList from './Components/TaskList/TaskList.js';
 
 function Test() {
     const [inputText, setInputText] = useState(''); 
@@ -9,6 +10,7 @@ function Test() {
             <h1 className='title'>task list: {inputText}</h1>
             <div className='inputContainer'>
                 <Form setInputText={setInputText}/>
+                <TaskList/>
             </div>
         </main>
     )

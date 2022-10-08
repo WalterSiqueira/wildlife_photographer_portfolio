@@ -1,15 +1,19 @@
 import React from 'react';
+import check from '../../Assets/Images/square-check-solid.svg';
+import trash from '../../Assets/Images/trash-solid.svg';
 
-funtion Task() {
+function Task() {
     return (
-        <div>
-            <p></p>
-            <button>
-                <FontAwesomeIcon icon="fa-solid fa-square-check" />   
+        <div className='taskListBlock'>
+            <p className='titleTaskList'></p>
+            <button className='checkBTN'>  
+                <img className='checkIcon' src={check}/>
             </button>
-            <button>
-                <i className="fa-sharp fa-solid fa-trash"></i> 
+            <button className='trashBTN'>
+                <img className='trashIcon' src={trash}/>
             </button>
         </div>
     )
 }
+
+export default Task;

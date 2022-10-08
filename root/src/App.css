@@ -24,8 +24,8 @@
             '. . . .'
             '. inputBar plusBtn .'
             '. . . .';
-        grid-template-columns: 0.3fr 1fr 0.5fr 0.3fr;
-        grid-template-rows: 0.3fr 1fr 0.3fr;
+        grid-template-columns: 0.3fr 1fr 0.2fr 0.3fr;
+        grid-template-rows: 0.3fr 0.5fr 0.3fr;
     }
     .inputContainer {
         grid-area: inputContainer;
@@ -44,3 +44,37 @@
             height: 100%;
             color: red;
         }
+        .TaskContainer {
+            grid-area: TaskContainer; 
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-areas: 
+                '. . .'
+                '. tasklist .'
+                '. . .';
+            grid-template-columns: 0.3fr 1fr 0.3fr;
+            grid-template-rows: 0.3fr 1fr 0.3fr;
+        }
+            .taskListBlock {
+                grid-area: tasklist;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-flow: wrap row;
+                justify-content: space-between;
+            }
+                .titleTaskList {
+                    width: 50%;
+                    height: 35%;
+                    background-color: red;
+                }
+                .checkBTN {
+                    width: 15%;
+                    height: 25%;
+                    margin: 5% 0 5% 0;
+                }
+                    .checkIcon {
+                        width: 100%;
+                        height: 100%;
+                    }
