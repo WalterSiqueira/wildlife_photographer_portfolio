@@ -9,7 +9,7 @@
         '. taskListContainer .'
         '. . .';
     grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr 4fr 0.5fr;
+    grid-template-rows: 0.3fr 0.2fr 0.4fr 2fr 0.3fr;
 }
     .title {
         grid-area: title;
@@ -25,7 +25,7 @@
             '. inputBar plusBtn .'
             '. . . .';
         grid-template-columns: 0.3fr 1fr 0.2fr 0.3fr;
-        grid-template-rows: 0.3fr 0.5fr 0.3fr;
+        grid-template-rows: 0.3fr 0.2fr 0.3fr;
     }
     .inputContainer {
         grid-area: inputContainer;
@@ -45,7 +45,7 @@
             color: red;
         }
         .TaskContainer {
-            grid-area: TaskContainer; 
+            grid-area: taskListContainer; 
             width: 100%;
             height: 100%;
             display: grid;
@@ -54,27 +54,39 @@
                 '. tasklist .'
                 '. . .';
             grid-template-columns: 0.3fr 1fr 0.3fr;
-            grid-template-rows: 0.3fr 1fr 0.3fr;
+            grid-template-rows: 0.3fr 0.3fr 0.3fr;
         }
             .taskListBlock {
                 grid-area: tasklist;
                 width: 100%;
                 height: 100%;
-                display: flex;
-                flex-flow: wrap row;
-                justify-content: space-between;
+                display: grid;
+                grid-template-areas: 
+                    'taskTitle . check trash';
+                grid-template-columns: 2.2fr 0.3fr 0.4fr 0.4fr;
+                grid-template-rows: 0.5fr;
             }
                 .titleTaskList {
-                    width: 50%;
-                    height: 35%;
+                    width: 100%;
+                    height: 100%;
                     background-color: red;
                 }
                 .checkBTN {
-                    width: 15%;
-                    height: 25%;
+                    width: 100%;
+                    height: 100%;
                     margin: 5% 0 5% 0;
+                    grid-area: check;
                 }
                     .checkIcon {
+                        width: 100%;
+                        height: 100%;
+                    }
+                .trashBTN {
+                    grid-area: trash;
+                    width: 100%;
+                    height: 100%;
+                }
+                    .trashIcon {
                         width: 100%;
                         height: 100%;
                     }

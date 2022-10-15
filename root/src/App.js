@@ -5,12 +5,14 @@ import TaskList from './Components/TaskList/TaskList.js';
 
 function Test() {
     const [inputText, setInputText] = useState(''); 
+    const [todos, setTodos] = useState([]);
+
     return (
         <main className='MainBlock'>
-            <h1 className='title'>task list: {inputText}</h1>
+            <h1 className='title'>task list: </h1>
             <div className='inputContainer'>
-                <Form setInputText={setInputText}/>
-                <TaskList/>
+                <Form todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}/> 
+                <TaskList todos={todos} inputText={inputText}/>
             </div>
         </main>
     )
