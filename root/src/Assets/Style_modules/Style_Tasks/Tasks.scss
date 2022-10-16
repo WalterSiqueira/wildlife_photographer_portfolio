@@ -1,0 +1,31 @@
+.taskListBlock {
+  display: grid;
+  grid-template-areas:
+    'text . checkbtn trashbtn';
+  grid-template-columns: 1fr 0.2fr 0.3fr 0.3fr;
+  grid-template-rows: 1fr;
+  border: solid black 3px;
+  margin: 2% 0 2% 0;
+}
+  .titleTaskList {
+    list-style: none;
+    font-size: 1.4em; 
+  }
+  .checkBTN {
+    grid-area: checkbtn;
+    width: 100%;
+    height: 100%;
+  }
+    .checkIcon {
+      width: 100%;
+      height: 100%;
+    }
+  .trashBTN {
+    grid-area: trashbtn;
+    width: 100%;
+    height: 100%;
+  }
+    .trashIcon {
+      width: 100%;
+      height: 100%;
+    }

@@ -1,0 +1,113 @@
+.MainBlock {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: ". . . . ." ". . title . ." ". . content . ." ". . . . .";
+  grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
+  grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+}
+
+.title {
+  grid-area: title;
+  width: 100%;
+  height: 100%;
+  font-size: 2.2em;
+  margin: 5% 0 5% 20%;
+}
+
+.inputContainer {
+  grid-area: content;
+  width: 100%;
+  height: 100%;
+  border: solid black 2px;
+  border-radius: 2vw;
+  display: grid;
+  grid-template-areas: ". . ." ". form ." ". tasks ." ". . .";
+  grid-template-columns: 0.1fr 2fr 0.1fr;
+  grid-template-rows: 0.1fr 0.5fr 2fr 0.1fr;
+  grid-row-gap: 2%;
+}
+
+.formBox {
+  grid-area: form;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "input . addbtn";
+  grid-template-columns: 2fr 0.2fr 0.5fr;
+  grid-template-rows: 100%;
+}
+
+.inputBar {
+  grid-area: input;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.4em;
+  margin: 0 0 0 2%;
+}
+
+.addbtn {
+  grid-area: addbtn;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: white;
+}
+
+.plusIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.taskListBlock {
+  display: grid;
+  grid-template-areas: "text . checkbtn trashbtn";
+  grid-template-columns: 1fr 0.2fr 0.3fr 0.3fr;
+  grid-template-rows: 1fr;
+  border: solid black 3px;
+  margin: 2% 0 2% 0;
+}
+
+.titleTaskList {
+  list-style: none;
+  font-size: 1.4em;
+}
+
+.checkBTN {
+  grid-area: checkbtn;
+  width: 100%;
+  height: 100%;
+}
+
+.checkIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.trashBTN {
+  grid-area: trashbtn;
+  width: 100%;
+  height: 100%;
+}
+
+.trashIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.TaskContainer {
+  grid-area: tasks;
+  width: 100%;
+  height: 100%;
+}
+
+.taskListContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */

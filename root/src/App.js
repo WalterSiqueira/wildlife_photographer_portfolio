@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './Assets/Style_modules/css-styles/main.css';
 import Form from './Components/Form/Form.js';
 import TaskList from './Components/TaskList/TaskList.js';
 
@@ -9,10 +9,10 @@ function Test() {
 
     return (
         <main className='MainBlock'>
-            <h1 className='title'>task list: </h1>
+            <h1 className='title'>Task list App</h1>
             <div className='inputContainer'>
                 <Form todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}/> 
-                <TaskList todos={todos} inputText={inputText}/>
+                <TaskList setTodos={setTodos} todos={todos} inputText={inputText}/>
             </div>
         </main>
     )
