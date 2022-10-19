@@ -1,13 +1,18 @@
 .MainBlock {
   width: 100%;
   height: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: ". . . . ." ". . title . ." ". . content . ." ". . . . .";
+      grid-template-areas: ". . . . ." ". . title . ." ". . content . ." ". . . . .";
+  -ms-grid-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
   grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
+  -ms-grid-rows: 0.2fr 0.6fr 4fr 0.2fr;
   grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
 }
 
 .title {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: title;
   width: 100%;
   height: 100%;
@@ -16,38 +21,63 @@
 }
 
 .inputContainer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: content;
   width: 100%;
   height: 100%;
-  border: solid black 2px;
+  border: solid #557aff 4px;
   border-radius: 2vw;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: ". . ." ". form ." ". tasks ." ". . .";
+      grid-template-areas: ". . ." ". form ." ". tasks ." ". . .";
+  -ms-grid-columns: 0.1fr 2fr 0.1fr;
   grid-template-columns: 0.1fr 2fr 0.1fr;
+  -ms-grid-rows: 0.1fr 2% 0.5fr 2% 2fr 2% 0.1fr;
   grid-template-rows: 0.1fr 0.5fr 2fr 0.1fr;
   grid-row-gap: 2%;
 }
 
 .formBox {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  border: solid #47d0ff 2px;
   grid-area: form;
   width: 100%;
   height: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "input . addbtn";
+      grid-template-areas: "input . addbtn";
+  -ms-grid-columns: 2fr 0.2fr 0.5fr;
   grid-template-columns: 2fr 0.2fr 0.5fr;
+  -ms-grid-rows: 100%;
   grid-template-rows: 100%;
 }
 
 .inputBar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: input;
   width: 100%;
-  height: 100%;
+  height: 95%;
   border: none;
   font-size: 1.4em;
-  margin: 0 0 0 2%;
+}
+
+.inputBar:focus {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: input;
+  width: 100%;
+  height: 93%;
+  outline: none;
+  border: none;
+  font-size: 1.4em;
 }
 
 .addbtn {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: addbtn;
   width: 100%;
   height: 100%;
@@ -61,23 +91,30 @@
 }
 
 .taskListBlock {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "text . checkbtn trashbtn";
+      grid-template-areas: "text . checkbtn trashbtn";
+  -ms-grid-columns: 1fr 0.2fr 0.3fr 0.3fr;
   grid-template-columns: 1fr 0.2fr 0.3fr 0.3fr;
+  -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
-  border: solid black 3px;
+  border: solid #8247ff 3px;
   margin: 2% 0 2% 0;
 }
 
 .titleTaskList {
   list-style: none;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 .checkBTN {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: checkbtn;
   width: 100%;
   height: 100%;
+  background-color: none;
+  border: none;
 }
 
 .checkIcon {
@@ -86,9 +123,13 @@
 }
 
 .trashBTN {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
   grid-area: trashbtn;
   width: 100%;
   height: 100%;
+  background-color: none;
+  border: none;
 }
 
 .trashIcon {
@@ -97,6 +138,8 @@
 }
 
 .TaskContainer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
   grid-area: tasks;
   width: 100%;
   height: 100%;
@@ -109,5 +152,4 @@
   padding: 0;
   border: none;
 }
-
 /*# sourceMappingURL=main.css.map */
