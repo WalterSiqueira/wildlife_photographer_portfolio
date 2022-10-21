@@ -1,35 +1,222 @@
-.taskListBlock {
-  display: grid;
-  grid-template-areas:
-    'text . checkbtn trashbtn';
-  grid-template-columns: 1fr 0.2fr 0.3fr 0.3fr;
-  grid-template-rows: 1fr;
-  border: solid #8247ff 3px;
-  margin: 2% 0 2% 0;
+@media screen and (max-width: 320px) {
+  .taskListBlock {
+    display: grid;
+    grid-template-areas:
+      'text . checkbtn trashbtn';
+    grid-template-columns: 1fr 0.2fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr;
+    border: solid #8247ff 3px;
+    margin: 2% 0 2% 0;
+  }
+    .titleTaskList {
+      list-style: none;
+      font-size: 1.6em;
+     }
+    .checkBTN {
+      grid-area: checkbtn;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+      border: none;
+    }
+      .checkIcon {
+        width: 100%;
+        height: 100%;
+      }
+    .trashBTN {
+      grid-area: trashbtn;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+      border: none;
+    }
+      .trashIcon {
+        width: 100%;
+        height: 100%;
+      }
 }
-  .titleTaskList {
-    list-style: none;
-    font-size: 1.6em;
+@media screen and (min-width: 321px) and (max-width: 481px) {
+  .taskListBlock {
+    display: grid;
+    grid-template-areas:
+      'text . checkbtn trashbtn';
+    grid-template-columns: 1fr 0.2fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr;
+    border: solid #8247ff 3px;
+    margin: 2% 0 2% 0;
   }
-  .checkBTN {
-    grid-area: checkbtn;
-    width: 100%;
-    height: 100%;
-    background-color: none;
-    border: none;
-  }
-    .checkIcon {
+    .titleTaskList {
+      list-style: none;
+      font-size: 1.6em;
+     }
+    .checkBTN {
+      grid-area: checkbtn;
       width: 100%;
       height: 100%;
+      background-color: none;
+      border: none;
     }
-  .trashBTN {
-    grid-area: trashbtn;
-    width: 100%;
-    height: 100%;
-    background-color: none;
-    border: none;
-  }
-    .trashIcon {
+      .checkIcon {
+        width: 100%;
+        height: 100%;
+      }
+    .trashBTN {
+      grid-area: trashbtn;
       width: 100%;
       height: 100%;
+      background-color: none;
+      border: none;
     }
+      .trashIcon {
+        width: 100%;
+        height: 100%;
+      }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .taskListBlock {
+    display: grid;
+    grid-template-areas:
+      'text . checkbtn trashbtn';
+    grid-template-columns: 1fr 0.2fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr;
+    border: solid #8247ff 3px;
+    margin: 2% 0 2% 0;
+  }
+    .titleTaskList {
+      list-style: none;
+      font-size: 1.6em;
+     }
+    .checkBTN {
+      grid-area: checkbtn;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+      border: none;
+    }
+      .checkIcon {
+        width: 100%;
+        height: 100%;
+      }
+    .trashBTN {
+      grid-area: trashbtn;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+      border: none;
+    }
+      .trashIcon {
+        width: 100%;
+        height: 100%;
+      }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .taskListBlock {
+    display: grid;
+    grid-template-areas:
+      'text . checkbtn trashbtn';
+    grid-template-columns: 1fr 0.2fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr;
+    border: solid #8247ff 3px;
+    margin: 2% 0 2% 0;
+  }
+    .titleTaskList {
+      list-style: none;
+      font-size: 1.6em;
+     }
+    .checkBTN {
+      grid-area: checkbtn;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+      border: none;
+    }
+      .checkIcon {
+        width: 100%;
+        height: 100%;
+      }
+    .trashBTN {
+      grid-area: trashbtn;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+      border: none;
+    }
+      .trashIcon {
+        width: 100%;
+        height: 100%;
+      }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .taskListBlock {
+    display: grid;
+    grid-template-areas:
+      'text . checkbtn trashbtn';
+    grid-template-columns: 1fr 0.2fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr;
+    border: solid #8247ff 3px;
+    margin: 2% 0 2% 0;
+  }
+    .titleTaskList {
+      list-style: none;
+      font-size: 1.6em;
+     }
+    .checkBTN {
+      grid-area: checkbtn;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+      border: none;
+    }
+      .checkIcon {
+        width: 100%;
+        height: 100%;
+      }
+    .trashBTN {
+      grid-area: trashbtn;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+      border: none;
+    }
+      .trashIcon {
+        width: 100%;
+        height: 100%;
+      }
+}
+@media screen and (min-width: 1440px) {
+  .taskListBlock {
+    display: grid;
+    grid-template-areas:
+      'text . checkbtn trashbtn';
+    grid-template-columns: 1fr 0.2fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr;
+    border: solid #8247ff 3px;
+    margin: 2% 0 2% 0;
+  }
+    .titleTaskList {
+      list-style: none;
+      font-size: 1.6em;
+     }
+    .checkBTN {
+      grid-area: checkbtn;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+      border: none;
+    }
+      .checkIcon {
+        width: 100%;
+        height: 100%;
+      }
+    .trashBTN {
+      grid-area: trashbtn;
+      width: 100%;
+      height: 100%;
+      background-color: none;
+      border: none;
+    }
+      .trashIcon {
+        width: 100%;
+        height: 100%;
+      }
+}

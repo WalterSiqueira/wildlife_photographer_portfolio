@@ -1,35 +1,222 @@
-.MainBlock {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-areas: 
-    '. . . . .'
-    '. . title . .'
-    '. . content . .'
-    '. . . . .';
-  grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
-  grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
-}
-  .title {
-    grid-area: title;
+@media screen and (max-width: 320px) {
+  .MainBlock {
     width: 100%;
     height: 100%;
-    font-size: 2.2em;
-    margin: 5% 0 5% 20%;
-  }
-  .inputContainer {
-    grid-area: content;
-    width: 100%;
-    height: 100%;
-    border: solid #557aff 4px;
-    border-radius: 2vw;
     display: grid;
     grid-template-areas: 
-      '. . .'
-      '. form .'
-      '. tasks .'
-      '. . .';
-    grid-template-columns: 0.1fr 2fr 0.1fr;
-    grid-template-rows: 0.1fr 0.5fr 2fr 0.1fr;
-    grid-row-gap:2%;
+      '. . . . .'
+      '. . title . .'
+      '. . content . .'
+      '. . . . .';
+    grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+  }
+    .title {
+      grid-area: title;
+      width: 100%;
+      height: 100%;
+      font-size: 2.2em;
+      margin: 5% 0 5% 20%;
+    }
+    .inputContainer {
+      grid-area: content;
+      width: 100%;
+      height: 100%;
+      border: solid #557aff 4px;
+      border-radius: 2vw;
+      display: grid;
+      grid-template-areas: 
+        '. . .'
+        '. form .'
+        '. tasks .'
+        '. . .';
+      grid-template-columns: 0.1fr 2fr 0.1fr;
+      grid-template-rows: 0.1fr 0.5fr 2fr 0.1fr;
+      grid-row-gap:2%;
+    }
+  }
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+      '. . . . .'
+      '. . title . .'
+      '. . content . .'
+      '. . . . .';
+    grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+  }
+    .title {
+      grid-area: title;
+      width: 100%;
+      height: 100%;
+      font-size: 2.2em;
+      margin: 5% 0 5% 20%;
+    }
+    .inputContainer {
+      grid-area: content;
+      width: 100%;
+      height: 100%;
+      border: solid #557aff 4px;
+      border-radius: 2vw;
+      display: grid;
+      grid-template-areas: 
+        '. . .'
+        '. form .'
+        '. tasks .'
+        '. . .';
+      grid-template-columns: 0.1fr 2fr 0.1fr;
+      grid-template-rows: 0.1fr 0.5fr 2fr 0.1fr;
+      grid-row-gap:2%;
+    }
+  }
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+      '. . . . .'
+      '. . title . .'
+      '. . content . .'
+      '. . . . .';
+    grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+  }
+    .title {
+      grid-area: title;
+      width: 100%;
+      height: 100%;
+      font-size: 2.2em;
+      margin: 5% 0 5% 20%;
+    }
+    .inputContainer {
+      grid-area: content;
+      width: 100%;
+      height: 100%;
+      border: solid #557aff 4px;
+      border-radius: 2vw;
+      display: grid;
+      grid-template-areas: 
+        '. . .'
+        '. form .'
+        '. tasks .'
+        '. . .';
+      grid-template-columns: 0.1fr 2fr 0.1fr;
+      grid-template-rows: 0.1fr 0.5fr 2fr 0.1fr;
+      grid-row-gap:2%;
+    }
+  }
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+      '. . . . .'
+      '. . title . .'
+      '. . content . .'
+      '. . . . .';
+    grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+  }
+    .title {
+      grid-area: title;
+      width: 100%;
+      height: 100%;
+      font-size: 2.2em;
+      margin: 5% 0 5% 20%;
+    }
+    .inputContainer {
+      grid-area: content;
+      width: 100%;
+      height: 100%;
+      border: solid #557aff 4px;
+      border-radius: 2vw;
+      display: grid;
+      grid-template-areas: 
+        '. . .'
+        '. form .'
+        '. tasks .'
+        '. . .';
+      grid-template-columns: 0.1fr 2fr 0.1fr;
+      grid-template-rows: 0.1fr 0.5fr 2fr 0.1fr;
+      grid-row-gap:2%;
+    }
+  }
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+      '. . . . .'
+      '. . title . .'
+      '. . content . .'
+      '. . . . .';
+    grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+  }
+    .title {
+      grid-area: title;
+      width: 100%;
+      height: 100%;
+      font-size: 2.2em;
+      margin: 5% 0 5% 20%;
+    }
+    .inputContainer {
+      grid-area: content;
+      width: 100%;
+      height: 100%;
+      border: solid #557aff 4px;
+      border-radius: 2vw;
+      display: grid;
+      grid-template-areas: 
+        '. . .'
+        '. form .'
+        '. tasks .'
+        '. . .';
+      grid-template-columns: 0.1fr 2fr 0.1fr;
+      grid-template-rows: 0.1fr 0.5fr 2fr 0.1fr;
+      grid-row-gap:2%;
+    }
+  }
+@media screen and (min-width: 1440px) {
+  .MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+      '. . . . .'
+      '. . title . .'
+      '. . content . .'
+      '. . . . .';
+    grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+  }
+    .title {
+      grid-area: title;
+      width: 100%;
+      height: 100%;
+      font-size: 2.2em;
+      margin: 5% 0 5% 20%;
+    }
+    .inputContainer {
+      grid-area: content;
+      width: 100%;
+      height: 100%;
+      border: solid #557aff 4px;
+      border-radius: 2vw;
+      display: grid;
+      grid-template-areas: 
+        '. . .'
+        '. form .'
+        '. tasks .'
+        '. . .';
+      grid-template-columns: 0.1fr 2fr 0.1fr;
+      grid-template-rows: 0.1fr 0.5fr 2fr 0.1fr;
+      grid-row-gap:2%;
+    }
   }
