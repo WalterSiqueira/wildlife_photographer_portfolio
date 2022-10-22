@@ -1,3 +1,4 @@
+//small mobile size layout
 @media screen and (max-width: 320px) {
   .taskListBlock {
     display: grid;
@@ -35,6 +36,7 @@
         height: 100%;
       }
 }
+//medium mobile sized layout
 @media screen and (min-width: 321px) and (max-width: 481px) {
   .taskListBlock {
     display: grid;
@@ -72,6 +74,7 @@
         height: 100%;
       }
 }
+//large mobile sized layout
 @media screen and (min-width: 481px) and (max-width: 800px) {
   .taskListBlock {
     display: grid;
@@ -109,6 +112,7 @@
         height: 100%;
       }
 }
+//small laptop sized layout
 @media screen and (min-width: 801px) and (max-width: 1024px) {
   .taskListBlock {
     display: grid;
@@ -146,6 +150,7 @@
         height: 100%;
       }
 }
+//medium laptop sized layout
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .taskListBlock {
     display: grid;
@@ -183,6 +188,7 @@
         height: 100%;
       }
 }
+//large laptop sized layout
 @media screen and (min-width: 1440px) {
   .taskListBlock {
     display: grid;

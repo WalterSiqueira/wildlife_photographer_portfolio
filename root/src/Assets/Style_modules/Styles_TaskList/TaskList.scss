@@ -1,3 +1,4 @@
+//small mobile sized layout
 @media screen and (max-width: 320px) {
   .TaskContainer {
     grid-area: tasks;
@@ -12,6 +13,7 @@
     border: none;
   }
 }
+//medium mobile sized layout 
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .TaskContainer {
     grid-area: tasks;
@@ -26,6 +28,7 @@
     border: none;
   }
 }
+//large mobile sized layout
 @media screen and (min-width: 481px) and (max-width: 800px) {
   .TaskContainer {
     grid-area: tasks;
@@ -40,6 +43,7 @@
     border: none;
   }
 }
+//small laptop sized layout
 @media screen and (min-width: 801px) and (max-width: 1024px) {
   .TaskContainer {
     grid-area: tasks;
@@ -54,6 +58,7 @@
     border: none;
   }
 }
+//medium laptop sized layout
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .TaskContainer {
     grid-area: tasks;
@@ -68,6 +73,7 @@
     border: none;
   }
 }
+//large laptop sized layout
 @media screen and (min-width: 1440px) {
   .TaskContainer {
     grid-area: tasks;
