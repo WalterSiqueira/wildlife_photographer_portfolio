@@ -6,6 +6,7 @@ function Task( {inputText,todo, todos, setTodos, text, id} ) {
     const deleteHandler = () => {
       setTodos(todos.filter((el) => el.id !== todo.id));
     };
+    
     return (
         <div id={id} className='taskListBlock'>
             <li className='titleTaskList'>{text}</li>
