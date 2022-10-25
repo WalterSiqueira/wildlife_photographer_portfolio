@@ -163,7 +163,7 @@
   }
     .titleTaskList {
       list-style: none;
-      font-size: 1.6em;
+      font-size: 1.8em;
      }
     .checkBTN {
       grid-area: checkbtn;
@@ -189,7 +189,7 @@
       }
 }
 //large laptop sized layout
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .taskListBlock {
     display: grid;
     grid-template-areas:
@@ -201,7 +201,7 @@
   }
     .titleTaskList {
       list-style: none;
-      font-size: 1.6em;
+      font-size: 3.5em;
      }
     .checkBTN {
       grid-area: checkbtn;

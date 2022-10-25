@@ -55,10 +55,11 @@
     grid-template-areas: 
       '. . . . .'
       '. . title . .'
+      '. . warning . .'
       '. . content . .'
       '. . . . .';
     grid-template-columns: 0.2fr 0.1fr 1fr 0.1fr 0.2fr;
-    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 0.6fr 4fr 0.2fr;
   }
     .title {
       grid-area: title;
@@ -66,6 +67,15 @@
       height: 100%;
       font-size: 2.2em;
       margin: 5% 0 5% 5%;
+    }
+    .warning {
+      grid-area: warning;
+      width: 100%;
+      height: 100%;
+      font-size: 1.2em;
+      color: red;
+      margin: 5% 0 5% 1%;
+      display: none;
     }
     .inputContainer {
       grid-area: content;
@@ -93,10 +103,11 @@
     grid-template-areas: 
       '. . . . .'
       '. . title . .'
+      '. . warning . .'
       '. . content . .'
       '. . . . .';
     grid-template-columns: 0.2fr 0.2fr 1fr 0.2fr 0.2fr;
-    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 0.6fr 4fr 0.2fr;
   }
     .title {
       grid-area: title;
@@ -104,6 +115,16 @@
       height: 100%;
       font-size: 2.2em;
       margin: 5% 0 5% 25%;
+    }
+    .warning {
+      grid-area: warning;
+      width: 100%;
+      height: 100%;
+      font-size: 1.6em;
+      color: red;
+      margin: 5% 0 5% 0;
+      display: none;
+      text-align: center;
     }
     .inputContainer {
       grid-area: content;
@@ -131,10 +152,11 @@
     grid-template-areas: 
       '. . . . .'
       '. . title . .'
+      '. . warning . .'
       '. . content . .'
       '. . . . .';
     grid-template-columns: 0.2fr 0.3fr 1fr 0.3fr 0.2fr;
-    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 0.6fr 4fr 0.2fr;
   }
     .title {
       grid-area: title;
@@ -142,6 +164,16 @@
       height: 100%;
       font-size: 2.2em;
       margin: 5% 0 5% 28%;
+    }
+    .warning {
+      grid-area: warning;
+      width: 100%;
+      height: 100%;
+      font-size: 1.8em;
+      color: red;
+      margin: 5% 0 5% 0;
+      display: none;
+      text-align: center;
     }
     .inputContainer {
       grid-area: content;
@@ -169,17 +201,28 @@
     grid-template-areas: 
       '. . . . .'
       '. . title . .'
+      '. . warning . .' 
       '. . content . .'
       '. . . . .';
     grid-template-columns: 0.2fr 0.3fr 1fr 0.3fr 0.2fr;
-    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 0.6fr 4fr 0.2fr;
   }
     .title {
       grid-area: title;
       width: 100%;
       height: 100%;
-      font-size: 3em;
-      margin: 5% 0 5% 25%;
+      font-size: 3.2em;
+      margin: 5% 0 5% 27%;
+    }
+    .warning {
+      grid-area: warning;
+      width: 100%;
+      height: 100%;
+      font-size: 2em;
+      color: red;
+      margin: 5% 0 5% 0;
+      display: none;
+      text-align: center;
     }
     .inputContainer {
       grid-area: content;
@@ -207,17 +250,28 @@
     grid-template-areas: 
       '. . . . .'
       '. . title . .'
+      '. . warning . .'
       '. . content . .'
       '. . . . .';
-    grid-template-columns: 0.2fr 0.5fr 1fr 0.5fr 0.2fr;
-    grid-template-rows: 0.2fr 0.6fr 4fr 0.2fr;
+    grid-template-columns: 0.2fr 0.2fr 3fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.6fr 0.6fr 4fr 0.2fr;
   }
     .title {
       grid-area: title;
       width: 100%;
       height: 100%;
-      font-size: 2.2em;
-      margin: 5% 0 5% 20%;
+      font-size: 5em;
+      margin: 5% 0 5% 35%;
+    }
+    .warning {
+      grid-area: warning;
+      width: 100%;
+      height: 100%;
+      font-size: 4em;
+      color: red;
+      margin: 5% 0 5% 0;
+      display: none;
+      text-align: center;
     }
     .inputContainer {
       grid-area: content;
