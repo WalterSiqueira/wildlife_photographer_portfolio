@@ -5,16 +5,16 @@ import githubIcon from '../../Assets/images/github.png';
 
 function ContactSection() {
   return (
-    <section>
-      <h2>Contacts</h2>
-      <h3>I'm available for work!
+    <section className='contactsBlock'>
+      <h2 className='contactsTitle'>Contacts</h2>
+      <h3 className='constactsDescription'>I'm available for work!
           Please send me a message if you are interested!
           email: walterbarbozasiqueira@gmail.com
       </h3>
-      <div>
-        <button><img src={twitterIcon}/></button>
-        <button><img src={githubIcon}/></button>
-        <button><img src={linkedinIcon}/></button>
+      <div className='contactsExternalButtons'>
+        <button className='twitterBtn'><img className='twitterIcon' src={twitterIcon}/></button>
+        <button className='githubBtn'><img className='githubIcon' src={githubIcon}/></button>
+        <button className='linkedinBtn'><img className='linkedinIcon' src={linkedinIcon}/></button>
       </div>
     </section>
   )

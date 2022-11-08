@@ -5,12 +5,12 @@ import githubIcon from '../../Assets/images/github.png';
 
 function FooterSection() {
   return (
-    <section>
-      <h4>© Copyright Walter Siqueira. All Rights Reserved.</h4> 
-      <div>
-        <button><img src={twitterIcon}/></button>
-        <button><img src={githubIcon}/></button>
-        <button><img src={linkedinIcon}/></button>
+    <section className='footerBlock'>
+      <h4 className='footerCopyright'>© Copyright Walter Siqueira. All Rights Reserved.</h4> 
+      <div className='footerExternalButtons'>
+        <button className='twitterBtn'><img className='twitterIcon' src={twitterIcon}/></button>
+        <button className='githubBtn'><img className='githubIcon' src={githubIcon}/></button>
+        <button className='linkedinBtn'><img className='linkedinIcon' src={linkedinIcon}/></button>
       </div> 
     </section>
   )

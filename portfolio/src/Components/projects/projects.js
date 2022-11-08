@@ -10,62 +10,62 @@ import CssIcon from '../../Assets/images/css.png';
 import HtmlIcon from '../../Assets/images/html-5.png';
 function ProjectSection() {
   return (
-    <section>
-        <h2>Projects</h2>
-        <div>
-          <img src={noteApp}/> 
-          <h4>To-do App</h4>
-          <h5>A to-do app to keep your notes that use CRUD operations</h5>
-          <h3>Technologies</h3>
-          <div>
-            <button className='reactIcon'><img src={ReactIcon}/></button>
-            <button className='sassIcon'><img src={SassIcon}/></button>
-            <button className='javascriptIcon'><img src={JavascriptIcon}/></button>
-            <button className='cssIcon'><img src={CssIcon}/></button> 
+    <section className='projectsBlock'>
+        <h2 className='projectsTitle'>Projects</h2>
+        <div className='noteAppBlock'>
+          <img className='noteImg'src={noteApp}/> 
+          <h4 className='noteTitle'>To-do App</h4>
+          <h5 className='noteDescription'>A to-do app to keep your notes that use CRUD operations</h5>
+          <h3 className='noteSubtitle'>Technologies</h3>
+          <div className='noteButtonsBlock'>
+            <button className='reactBtn'><img className='reactIcon'src={ReactIcon}/></button>
+            <button className='sassBtn'><img className='sassIcon' src={SassIcon}/></button>
+            <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
+            <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button>Live Site</button>
-          <button>Github</button>
+          <button className='noteLiveBtn'>Live Site</button>
+          <button className='noteGithubBtn'>Github</button>
         </div>
-        <div>
-          <img src={SimpleCalc}/> 
-          <h4>calculator App</h4>
-          <h5>A simple calculator to do math operations</h5>
-          <h3>Technologies</h3>
-          <div>
-            <button className='htmlIcon'><img src={HtmlIcon}/></button>
-            <button className='sassIcon'><img src={SassIcon}/></button>
-            <button className='javascriptIcon'><img src={JavascriptIcon}/></button>
-            <button className='cssIcon'><img src={CssIcon}/></button> 
+        <div className='calcBlock'>
+          <img className='calcImg' src={SimpleCalc}/> 
+          <h4 className='calcTitle'>calculator App</h4>
+          <h5 className='calcDescription'>A simple calculator to do math operations</h5>
+          <h3 className='calcSubtitle'>Technologies</h3>
+          <div className='calcButtonsBlock'>
+            <button className='htmlBtn'><img className='htmlIcon' src={HtmlIcon}/></button>
+            <button className='sassBtn'><img className='sassIcon' src={SassIcon}/></button>
+            <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
+            <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button>Live Site</button>
-          <button>Github</button>
+          <button className='calcLiveBtn'>Live Site</button>
+          <button className='calcGithubBtn'>Github</button>
         </div>
-        <div>
-          <img src={FyloLanding}/> 
-          <h4>Landing page</h4>
-          <h5>A landing page for a fictious enterpraise called fylo</h5>
-          <h3>Technologies</h3>
-          <div>
-            <button className='reactIcon'><img src={ReactIcon}/></button>
-            <button className='sassIcon'><img src={SassIcon}/></button>
-            <button className='javascriptIcon'><img src={JavascriptIcon}/></button>
-            <button className='cssIcon'><img src={CssIcon}/></button> 
+        <div className='fyloBlock'>
+          <img className='fyloImg' src={FyloLanding}/> 
+          <h4 className='fyloTitle'>Landing page</h4>
+          <h5 className='fyloDescription'>A landing page for a fictious enterpraise called fylo</h5>
+          <h3 className='fyloSubtitle'>Technologies</h3>
+          <div className='fyloButtonsBlock'>
+            <button className='reactBtn'><img className='reactIcon' src={ReactIcon}/></button>
+            <button className='sassBtn'><img className='sassIcon' src={SassIcon}/></button>
+            <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
+            <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button>Live Site</button>
-          <button>Github</button>
+          <button className='fyloLiveBtn'>Live Site</button>
+          <button className='fyloGithubBtn'>Github</button>
         </div>
-        <div>
-          <img src={TipCalc}/> 
-          <h4>Tip calculator App</h4>
-          <h5>A restaurant's tip calculator</h5>
-          <h3>Technologies</h3>
-          <div>
-            <button className='htmlIcon'><img src={HtmlIcon}/></button>
-            <button className='javascriptIcon'><img src={JavascriptIcon}/></button>
-            <button className='cssIcon'><img src={CssIcon}/></button> 
+        <div className='tipBlock'>
+          <img className='tipImg' src={TipCalc}/> 
+          <h4 className='tipTitle'>Tip calculator App</h4>
+          <h5 className='tipDescription'>A restaurant's tip calculator</h5>
+          <h3 className='tipSubtitle'>Technologies</h3>
+          <div className='tipButtonsBlock'>
+            <button className='htmlBtn'><img className='htmlIcon' src={HtmlIcon}/></button>
+            <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
+            <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button>Live Site</button>
-          <button>Github</button>
+          <button className='tipLiveBtn'>Live Site</button>
+          <button className='tipGithubBtn'>Github</button>
         </div>
     </section>
     

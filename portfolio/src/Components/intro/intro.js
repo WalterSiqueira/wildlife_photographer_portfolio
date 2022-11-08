@@ -2,13 +2,13 @@ import React from 'react';
 
 function IntroSection() {
   return (
-    <div>
-      <h3>Hi my name is</h3>
-      <h1>Walter Siqueira</h1>
-      <h3>I am a Front-end developer based in Brazil that is always looking
+    <section className='introBlock'>
+      <h3 className='introGreeting'>Hi my name is</h3>
+      <h1 className='introName'>Walter Siqueira</h1>
+      <h3 className='introDescription'>I am a Front-end developer based in Brazil that is always looking
       for knowladge and new experiences
       </h3>
-    </div>
+    </section>
   )
 }
 
