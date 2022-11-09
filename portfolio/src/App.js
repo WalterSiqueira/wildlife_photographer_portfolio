@@ -9,7 +9,7 @@ import ContactSection from './Components/contacts/contacts.js';
 import FooterSection from './Components/footer/footer.js';
 function App() {
   return (
-    <main>
+    <main className='mainBlock'>
       <header className='headerBlock'>
         <button className='homeBTN'>Walter Siqueira</button>
         <button className='techBTN'>Technologies</button>

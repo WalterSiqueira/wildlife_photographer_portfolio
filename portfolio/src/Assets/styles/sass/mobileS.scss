@@ -1,0 +1,64 @@
+@media screen and (max-width: 320px) {
+  * {
+    margin: 0;
+    border: none;
+    padding: 0;
+    font-family: 'PT-sans';
+    background-color: #1494d9;
+    color: white;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  } 
+  .mainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+      'header'
+      'intro'
+      'projects'
+      'about'
+      'tech'
+      'contacts'
+      'footer';
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 1fr 2fr 1fr 3fr 1fr 0.5fr;
+  }
+    .headerBlock {
+      grid-area: header;
+      width: 100%;
+      height: 100%;
+    }
+    .introBlock {
+      grid-area: intro;
+      width: 100%;
+      height: 100%;
+    }
+    .projectsBlock {
+      grid-area: projects;
+      width: 100%;
+      height: 100%;
+    }
+    .aboutBlock {
+      grid-area: about;
+      width: 100%;
+      height: 100%;
+    }
+    .techBlock {
+      grid-area: tech;
+      width: 100%;
+      height: 100%;
+    }
+    .contactsBlock {
+      grid-area: contacts;
+      width: 100%;
+      height: 100%;
+    }
+    .footerBlock {
+      grid-area: footer;
+      width: 100%;
+      height: 100%;
+    } 
+}
