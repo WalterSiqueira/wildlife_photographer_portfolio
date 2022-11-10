@@ -16,7 +16,7 @@
     height: 100%;
     display: grid;
     grid-template-areas:
-      'header'
+      '.'
       'intro'
       'projects'
       'about'
@@ -24,18 +24,78 @@
       'contacts'
       'footer';
     grid-template-columns: auto;
-    grid-template-rows: 0.5fr 1fr 2fr 1fr 3fr 1fr 0.5fr;
+    grid-template-rows: 0.15fr 0.3fr 2fr 1fr 3fr 1fr 0.5fr;
   }
     .headerBlock {
-      grid-area: header;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       width: 100%;
-      height: 100%;
+      height: 10%;
+      display: grid;
+      grid-template-areas: 
+        'home . menu';
+      grid-template-columns: 2.2fr 3fr 1fr;
+      grid-template-rows: 0.3fr;
     }
+      .homeBTN {
+        width: 95%;
+        height: 60.39%;
+        margin: 10% 0 0 5%;
+        border: solid #09e6bc 3px; 
+        font-size: 1em;
+      }
+      .techBTN {
+        display: none;
+      }
+      .aboutBTN {
+        display: none;
+      }
+      .projectsBTN {
+        display: none;
+      }
+      .contactsBTN {
+        display: none;
+      }
+      .menuBTN {
+        grid-area: menu;
+        width: 60%;
+        height: 50%;
+        margin: 20% 5% 5% 15%;
+        border: solid #09e6bc 3px;
+      }
     .introBlock {
       grid-area: intro;
       width: 100%;
       height: 100%;
+      display: grid;
+      grid-template-areas:
+        '. . .'
+        '. greetings .'
+        '. name .'
+        '. description .'
+        '. . .';
+      grid-template-columns: 0.1fr 2fr 0.1fr;
+      grid-template-rows: 0.1fr 0.1fr 0.1fr 0.3fr 0.1fr;
     }
+      .introGreeting {
+        grid-area: greetings;
+        font-size: 1.4em;
+        text-align: center;
+      }
+      .introName {
+        grid-area: name;
+        font-size: 2em;
+        text-align: center;
+        color: #f9f871;
+      }
+      .introDescription{
+        grid-area: description;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 5%;
+      }
     .projectsBlock {
       grid-area: projects;
       width: 100%;
