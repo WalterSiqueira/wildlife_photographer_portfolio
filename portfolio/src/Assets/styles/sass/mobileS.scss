@@ -98,9 +98,322 @@
       }
     .projectsBlock {
       grid-area: projects;
+      display: grid;
+      grid-template-areas: 
+        '. . .'
+        '.  title  .'
+        '. todo .'
+        '. calculator .'
+        '. landing .'
+        '. tip .'
+        '. . .';
+      grid-template-columns: 0.1fr  1fr  0.1fr;
+      grid-template-rows: 0.1fr 0.5fr 2fr 2fr 2fr 2fr 0.1fr;
       width: 100%;
       height: 100%;
+      grid-gap: 1%;
     }
+      .projectsTitle {
+          grid-area: title;
+          text-align: center;
+          padding: 12% 0 0 0;
+          font-size: 2em;
+          color: #f9f871;
+      }
+      .noteAppBlock {
+        grid-area: todo;
+        background-color: white;
+        border: solid #09e6bc 3px;
+        border-radius: 2vh;
+        display: grid;
+        grid-template-areas: 
+          'image'
+          'title'
+          'description'
+          'technologies'
+          'techIcons'
+          'liveBTN'
+          '.'
+          'githubBTN'
+          '.';
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 0.3fr 0.7fr 0.3fr 0.7fr 0.3fr 0.1fr 0.3fr 0.1fr;
+      }
+        .noteImg {
+          grid-area: image;
+          width: 100%;
+          height: 100%;
+        }
+        .noteTitle {
+          grid-area: title;
+          font-size: 1.4em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .noteDescription {
+          grid-area: description;
+          font-size: 1.2em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .noteSubtitle {
+          grid-area: technologies;
+          font-size: 1.3em;
+          text-align: left;
+          background-color: white;
+          color: black;
+        }
+        .noteButtonsBlock {
+          grid-area: techIcons;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+          background-color: white;
+        }
+        .noteButtonsBlock *{background-color: white;}
+        .noteLiveBtn {
+          grid-area: liveBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh;
+        }
+        .noteGithubBtn {
+          grid-area: githubBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh; 
+        }
+
+      .calcBlock {
+        grid-area: calculator;
+        background-color: white;
+        border: solid #09e6bc 3px;
+        border-radius: 2vh;
+        display: grid;
+        grid-template-areas: 
+          'image'
+          'title'
+          'description'
+          'technologies'
+          'techIcons'
+          'liveBTN'
+          '.'
+          'githubBTN'
+          '.';
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 0.3fr 0.7fr 0.3fr 0.7fr 0.3fr 0.1fr 0.3fr 0.1fr;
+      }
+        .calcImg {
+          grid-area: image;
+          width: 100%;
+          height: 100%;
+        }
+        .calcTitle {
+          grid-area: title;
+          font-size: 1.4em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .calcDescription {
+          grid-area: description;
+          font-size: 1.2em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .calcSubtitle {
+          grid-area: technologies;
+          font-size: 1.3em;
+          text-align: left;
+          background-color: white;
+          color: black;
+        }
+        .calcButtonsBlock {
+          grid-area: techIcons;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+          background-color: white;
+        }
+        .calcButtonsBlock *{background-color: white;}
+        .calcLiveBtn {
+          grid-area: liveBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh;
+        }
+        .calcGithubBtn {
+          grid-area: githubBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh; 
+        }
+      .fyloBlock {
+        grid-area: landing;
+        background-color: white;
+        border: solid #09e6bc 3px;
+        border-radius: 2vh;
+        display: grid;
+        grid-template-areas: 
+          'image'
+          'title'
+          'description'
+          'technologies'
+          'techIcons'
+          'liveBTN'
+          '.'
+          'githubBTN'
+          '.';
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 0.3fr 0.7fr 0.3fr 0.7fr 0.3fr 0.1fr 0.3fr 0.1fr;
+      }
+        .fyloImg {
+          grid-area: image;
+          width: 100%;
+          height: 100%;
+        }
+        .fyloTitle {
+          grid-area: title;
+          font-size: 1.4em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .fyloDescription {
+          grid-area: description;
+          font-size: 1.2em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .fyloSubtitle {
+          grid-area: technologies;
+          font-size: 1.3em;
+          text-align: left;
+          background-color: white;
+          color: black;
+        }
+        .fyloButtonsBlock {
+          grid-area: techIcons;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+          background-color: white;
+        }
+        .fyloButtonsBlock *{background-color: white;}
+        .fyloLiveBtn {
+          grid-area: liveBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh;
+        }
+        .fyloGithubBtn {
+          grid-area: githubBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh; 
+        }
+      .tipBlock {
+        grid-area: tip;
+        background-color: white;
+        border: solid #09e6bc 3px;
+        border-radius: 2vh;
+        display: grid;
+        grid-template-areas: 
+          'image'
+          'title'
+          'description'
+          'technologies'
+          'techIcons'
+          'liveBTN'
+          '.'
+          'githubBTN'
+          '.';
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 0.3fr 0.5fr 0.3fr 0.7fr 0.3fr 0.1fr 0.3fr 0.1fr;
+      }
+        .tipImg {
+          grid-area: image;
+          width: 100%;
+          height: 100%;
+        }
+        .tipTitle {
+          grid-area: title;
+          font-size: 1.4em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .tipDescription {
+          grid-area: description;
+          font-size: 1.2em;
+          text-align: center;
+          background-color: white;
+          color: black;
+          margin: 5% 0 0 0;
+        }
+        .tipSubtitle {
+          grid-area: technologies;
+          font-size: 1.3em;
+          text-align: left;
+          background-color: white;
+          color: black;
+        }
+        .tipButtonsBlock {
+          grid-area: techIcons;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+          background-color: white;
+        }
+        .tipButtonsBlock *{background-color: white;}
+        .tipLiveBtn {
+          grid-area: liveBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh;
+        }
+        .tipGithubBtn {
+          grid-area: githubBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh; 
+        }
     .aboutBlock {
       grid-area: about;
       width: 100%;
