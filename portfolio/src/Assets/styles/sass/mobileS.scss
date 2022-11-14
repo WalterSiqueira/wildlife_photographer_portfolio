@@ -24,7 +24,7 @@
       'contacts'
       'footer';
     grid-template-columns: auto;
-    grid-template-rows: 0.15fr 0.3fr 2fr 1fr 3fr 1fr 0.5fr;
+    grid-template-rows: 0.05fr 0.1fr 0.5fr 0.25fr 1fr 0.1fr 0.1fr;
   }
     .headerBlock {
       position: fixed;
@@ -418,20 +418,238 @@
       grid-area: about;
       width: 100%;
       height: 100%;
+      display: grid;
+      grid-template-areas:
+        '. title title .'
+        '. description description .'
+        '. subtitle subtitle .'
+        '. contacts . .';
+      grid-template-columns: 0.1fr 2fr 1fr 0.1fr;
+      grid-template-rows: 0.03fr 0.1fr 0.03fr 0.06fr;
     }
+      .aboutTitle {
+        grid-area: title;
+        text-align: center;
+        font-size: 2em;
+        color: #f9f871;
+      }
+      .aboutDescription {
+        grid-area: description;
+        text-align: center;
+        font-size: 1.2em;
+      }
+      .aboutSubtitle {
+        grid-area: subtitle;
+      }
+      .aboutExternalButtons {
+        grid-area: contacts;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+      }
     .techBlock {
       grid-area: tech;
       width: 100%;
       height: 100%;
+      display: grid;
+      grid-template-areas:
+        '. title .'
+        '. react .'
+        '. javascript .'
+        '. sass .'
+        '. css .'
+        '. html .';
+      grid-template-rows: 0.02fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+      grid-template-columns: 0.1fr 1fr 0.1fr;
+      grid-row-gap: 1%;
     }
+      .techTitle {
+        grid-area: title;
+        text-align: center;
+        font-size: 2em;
+        color: #f9f871;
+      }
+      .reactBlock {
+        grid-area: react;
+        display: grid;
+        grid-template-areas: 
+          'icon'
+          'title'
+          'text';
+        grid-template-columns: auto;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr; 
+        border: solid #09e6bc 3px;
+        padding: 1%;
+        
+      }
+        .reactImg {
+          grid-area: icon;
+          width: 30%;
+          height: 60%;
+          margin: 10% 0 0 0;
+        }
+        .reactTitle {
+          grid-area: title;
+          font-size: 1.8em;
+          text-align: left;
+        }
+        .reactDescription {
+          grid-area: text; 
+          font-size: 1.6em;
+          text-align: left;
+        }
+      .JavascriptBlock {
+        grid-area: javascript;
+        display: grid;
+        grid-template-areas: 
+          'icon'
+          'title'
+          'text';
+        grid-template-columns: auto;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr; 
+        border: solid #09e6bc 3px;
+        padding: 1%;
+      }
+        .javascriptImg {
+          grid-area: icon;
+          width: 30%;
+          height: 60%;
+          margin: 10% 0 0 0;
+        }
+        .javascriptTitle {
+          grid-area: title;
+          font-size: 1.8em;
+          text-align: left;
+        }
+        .javascriptDescription {
+          grid-area: text; 
+          font-size: 1.6em;
+          text-align: left;
+        }
+      .sassBlock {
+        grid-area: sass;
+        display: grid;
+        grid-template-areas: 
+          'icon'
+          'title'
+          'text';
+        grid-template-columns: auto;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr; 
+        border: solid #09e6bc 3px;
+        padding: 1%;
+      }
+        .sassImg {
+          grid-area: icon;
+          width: 30%;
+          height: 60%;
+          margin: 10% 0 0 0;
+        }
+        .sassTitle {
+          grid-area: title;
+          font-size: 1.8em;
+          text-align: left;
+        }
+        .sassDescription {
+          grid-area: text; 
+          font-size: 1.6em;
+          text-align: left;
+        }
+      .cssBlock {
+        grid-area: css;
+        display: grid;
+        grid-template-areas: 
+          'icon'
+          'title'
+          'text';
+        grid-template-columns: auto;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr; 
+        border: solid #09e6bc 3px;
+        padding: 1%;
+      }
+        .cssImg {
+          grid-area: icon;
+          width: 30%;
+          height: 60%;
+          margin: 10% 0 0 0;
+        }
+        .cssTitle {
+          grid-area: title;
+          font-size: 1.8em;
+          text-align: left;
+        }
+        .cssDescription {
+          grid-area: text; 
+          font-size: 1.6em;
+          text-align: left;
+        }
+      .htmlBlock {
+        grid-area: html;
+        display: grid;
+        grid-template-areas: 
+          'icon'
+          'title'
+          'text';
+        grid-template-columns: auto;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr; 
+        border: solid #09e6bc 3px;
+        padding: 1%;
+      }
+        .htmlImg {
+          grid-area: icon;
+          width: 30%;
+          height: 60%;
+          margin: 10% 0 0 0;
+        }
+        .htmlTitle {
+          grid-area: title;
+          font-size: 1.8em;
+          text-align: left;
+        }
+        .htmlDescription {
+          grid-area: text; 
+          font-size: 1.6em;
+          text-align: left;
+        }
     .contactsBlock {
       grid-area: contacts;
       width: 100%;
       height: 100%;
+      display: grid;
+      grid-template-areas:
+        'title'
+        'description'
+        'contacts';
+      grid-template-columns: auto;
+      grid-template-rows: 0.05fr 0.1fr 0.1fr;
+      padding: 1%;
+      grid-row-gap: 5%;
     }
+      .contactsTitle {
+        grid-area: title;
+        text-align: center;
+        font-size: 2em;
+        color: #f9f871;
+      }
+      .contactsDescription {
+        grid-area: description;
+        font-size: 1.6em;
+        text-align: center;
+      }
+      .contactsExternalButtons {
+        grid-area: contacts;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: left; 
+      }
     .footerBlock {
       grid-area: footer;
       width: 100%;
       height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
     } 
+      .footerCopyright {
+        font-size: 1.2em;
+      }
 }
