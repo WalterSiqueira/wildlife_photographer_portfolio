@@ -24,7 +24,7 @@
       'contacts'
       'footer';
     grid-template-columns: auto;
-    grid-template-rows: 0.05fr 0.1fr 0.5fr 0.25fr 1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.05fr 0.1fr 0.5fr 0.15fr 0.68fr 0.07fr 0.05fr;
   }
     .headerBlock {
       position: fixed;
@@ -62,7 +62,7 @@
         grid-area: menu;
         width: 60%;
         height: 50%;
-        margin: 20% 5% 5% 15%;
+        margin: 20% 10% 5% 10%;
         border: solid #09e6bc 3px;
       }
     .introBlock {

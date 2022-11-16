@@ -7,7 +7,7 @@ function ContactSection() {
   return (
     <section className='contactsBlock'>
       <h2 className='contactsTitle'>Contacts</h2>
-      <h3 className='constactsDescription'>I'm available for work!
+      <h3 className='contactsDescription'>I'm available for work!
           Please send me a message if you are interested!
           email: walterbarbozasiqueira@gmail.com
       </h3>
