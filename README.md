@@ -2,13 +2,13 @@
 This project is a portfolio page created by me and for me that show more about myself and my other projects
 
 ## Table of contents
- -[Overview](#overview)
-	 -[screenshot](#screenshot)
+ - [Overview](#overview)
+	 - [screenshot](#screenshot)
 	 - [links](#links)
--[Project description](#project-description)
-	-[built with](#built-with)
-	-[what i learned](#what-i-learned)
-	-[Author](#author)
+- [Project description](#project-description)
+	- [built with](#built-with)
+	- [what i learned](#what-i-learned)
+	- [Author](#author)
 
 ## Overview
 
