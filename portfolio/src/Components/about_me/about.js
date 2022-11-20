@@ -3,9 +3,9 @@ import twitterIcon from '../../Assets/images/twitter.png';
 import linkedinIcon from '../../Assets/images/linkedin.png';
 import githubIcon from '../../Assets/images/github.png';
 
-function AboutSection() {
+function AboutSection({aboutId}) {
   return (
-    <section className='aboutBlock'>
+    <section ref={aboutId} className='aboutBlock'>
       <h2 className='aboutTitle'>About Me</h2>
       <p className='aboutDescription'>Hello i am Walter Siqueira i am a programmer specialized in
         web/front-end,i have knowledge in html, css and javascript,

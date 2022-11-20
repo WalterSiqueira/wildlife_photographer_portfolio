@@ -22,9 +22,10 @@
       'about'
       'tech'
       'contacts'
+      '.'
       'footer';
     grid-template-columns: auto;
-    grid-template-rows: 0.05fr 0.1fr 0.5fr 0.15fr 0.68fr 0.07fr 0.05fr;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.15fr 0.9fr 0.07fr 0.1fr 0.05fr;
   }
     .headerBlock {
       position: fixed;
@@ -39,6 +40,24 @@
       grid-template-columns: 2.2fr 3fr 1fr;
       grid-template-rows: 0.3fr;
     }
+      .headerButtonsBox {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: none;
+        backdrop-filter: blur(8px);
+        background-color: rgba(0,0,0, 0.4);
+        grid-template-areas:
+          '. . close .'
+          '. tech tech .'
+          '. about about .'
+          '. projects projects .'
+          '. contacts contacts .';
+        grid-template-columns: 0.1fr 1fr 0.5fr 0.1fr;
+        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+      }
       .homeBTN {
         width: 95%;
         height: 60.39%;
@@ -47,16 +66,47 @@
         font-size: 1em;
       }
       .techBTN {
-        display: none;
+        display: block;
+        grid-area: tech;
+        margin: 10% 0 0 0 ;
+        border: solid #09e6bc 3px;
+        font-size: 1.2em;
       }
       .aboutBTN {
-        display: none;
+        display: block;
+        grid-area: about;
+        margin: 10% 0 0 0;
+        border: solid #09e6bc 3px;
+        font-size: 1.2em;
       }
       .projectsBTN {
-        display: none;
+        display: block;
+        grid-area: projects;
+        margin: 10% 0 0 0;
+        border: solid #09e6bc 3px;
+        font-size: 1.2em;
       }
       .contactsBTN {
+        display: block;
+        grid-area: contacts;
+        margin: 10% 0 0 0;
+        border: solid #09e6bc 3px;
+        font-size: 1.2em;
+      }
+      .menuBTN {
+        grid-area: menu;
+        width: 60%;
+        height: 50%;
+        margin: 20% 5% 5% 15%;
+        border: solid #09e6bc 3px;
+      }
+      .closeBTN {
+        grid-area: close;
         display: none;
+        width: 60%;
+        height: 50%;
+        margin: 20% 5% 5% 15%;
+        border: solid #09e6bc 2px; 
       }
       .menuBTN {
         grid-area: menu;

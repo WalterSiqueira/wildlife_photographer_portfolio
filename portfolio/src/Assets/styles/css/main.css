@@ -16,7 +16,7 @@
     height: 100%;
     display: grid;
     grid-template-areas: '.' 'intro' 'projects' 'about' 'tech' 'contacts' 'footer';
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.05fr 0.1fr 0.5fr 0.25fr 1fr 0.1fr 0.1fr; }
 
   .headerBlock {
@@ -31,6 +31,19 @@
     grid-template-columns: 2.2fr 3fr 1fr;
     grid-template-rows: 0.3fr; }
 
+  .headerButtonsBox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.4);
+    grid-template-areas: '. . close .' '. tech tech .' '. about about .' '. projects projects .' '. contacts contacts .';
+    grid-template-columns: 0.1fr 1fr 0.5fr 0.1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr; }
+
   .homeBTN {
     width: 95%;
     height: 60.39%;
@@ -39,16 +52,32 @@
     font-size: 1em; }
 
   .techBTN {
-    display: none; }
+    display: block;
+    grid-area: tech;
+    margin: 10% 0 0 0;
+    border: solid #09e6bc 3px;
+    font-size: 1.2em; }
 
   .aboutBTN {
-    display: none; }
+    display: block;
+    grid-area: about;
+    margin: 10% 0 0 0;
+    border: solid #09e6bc 3px;
+    font-size: 1.2em; }
 
   .projectsBTN {
-    display: none; }
+    display: block;
+    grid-area: projects;
+    margin: 10% 0 0 0;
+    border: solid #09e6bc 3px;
+    font-size: 1.2em; }
 
   .contactsBTN {
-    display: none; }
+    display: block;
+    grid-area: contacts;
+    margin: 10% 0 0 0;
+    border: solid #09e6bc 3px;
+    font-size: 1.2em; }
 
   .menuBTN {
     grid-area: menu;
@@ -56,6 +85,14 @@
     height: 50%;
     margin: 20% 5% 5% 15%;
     border: solid #09e6bc 3px; }
+
+  .closeBTN {
+    grid-area: close;
+    display: none;
+    width: 60%;
+    height: 50%;
+    margin: 20% 5% 5% 15%;
+    border: solid #09e6bc 2px; }
 
   .introBlock {
     grid-area: intro;
@@ -68,12 +105,12 @@
 
   .introGreeting {
     grid-area: greetings;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center; }
 
   .introName {
     grid-area: name;
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: center;
     color: #f9f871; }
 
@@ -97,7 +134,7 @@
     grid-area: title;
     text-align: center;
     padding: 12% 0 0 0;
-    font-size: 2em;
+    font-size: 1.4em;
     color: #f9f871; }
 
   .noteAppBlock {
@@ -377,7 +414,7 @@
   .aboutTitle {
     grid-area: title;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.4em;
     color: #f9f871; }
 
   .aboutDescription {
@@ -407,7 +444,7 @@
   .techTitle {
     grid-area: title;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.4em;
     color: #f9f871; }
 
   .reactBlock {
@@ -427,12 +464,12 @@
 
   .reactTitle {
     grid-area: title;
-    font-size: 1.8em;
+    font-size: 1.4em;
     text-align: left; }
 
   .reactDescription {
     grid-area: text;
-    font-size: 1.6em;
+    font-size: 1.2em;
     text-align: left; }
 
   .JavascriptBlock {
@@ -452,12 +489,12 @@
 
   .javascriptTitle {
     grid-area: title;
-    font-size: 1.8em;
+    font-size: 1.4em;
     text-align: left; }
 
   .javascriptDescription {
     grid-area: text;
-    font-size: 1.6em;
+    font-size: 1.2em;
     text-align: left; }
 
   .sassBlock {
@@ -477,12 +514,12 @@
 
   .sassTitle {
     grid-area: title;
-    font-size: 1.8em;
+    font-size: 1.4em;
     text-align: left; }
 
   .sassDescription {
     grid-area: text;
-    font-size: 1.6em;
+    font-size: 1.2em;
     text-align: left; }
 
   .cssBlock {
@@ -502,12 +539,12 @@
 
   .cssTitle {
     grid-area: title;
-    font-size: 1.8em;
+    font-size: 1.4em;
     text-align: left; }
 
   .cssDescription {
     grid-area: text;
-    font-size: 1.6em;
+    font-size: 1.2em;
     text-align: left; }
 
   .htmlBlock {
@@ -527,12 +564,12 @@
 
   .htmlTitle {
     grid-area: title;
-    font-size: 1.8em;
+    font-size: 1.4em;
     text-align: left; }
 
   .htmlDescription {
     grid-area: text;
-    font-size: 1.6em;
+    font-size: 1.2em;
     text-align: left; }
 
   .contactsBlock {
@@ -549,12 +586,12 @@
   .contactsTitle {
     grid-area: title;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.4em;
     color: #f9f871; }
 
   .contactsDescription {
     grid-area: description;
-    font-size: 1.6em;
+    font-size: 1.2em;
     text-align: center; }
 
   .contactsExternalButtons {
@@ -590,9 +627,9 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-areas: '.' 'intro' 'projects' 'about' 'tech' 'contacts' 'footer';
+    grid-template-areas: '.' 'intro' 'projects' 'about' 'tech' 'contacts' '.' 'footer';
     grid-template-columns: auto;
-    grid-template-rows: 0.05fr 0.1fr 0.5fr 0.15fr 0.68fr 0.07fr 0.05fr; }
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.15fr 0.9fr 0.07fr 0.1fr 0.05fr; }
 
   .headerBlock {
     position: fixed;
@@ -606,6 +643,19 @@
     grid-template-columns: 2.2fr 3fr 1fr;
     grid-template-rows: 0.3fr; }
 
+  .headerButtonsBox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.4);
+    grid-template-areas: '. . close .' '. tech tech .' '. about about .' '. projects projects .' '. contacts contacts .';
+    grid-template-columns: 0.1fr 1fr 0.5fr 0.1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr; }
+
   .homeBTN {
     width: 95%;
     height: 60.39%;
@@ -614,16 +664,47 @@
     font-size: 1em; }
 
   .techBTN {
-    display: none; }
+    display: block;
+    grid-area: tech;
+    margin: 10% 0 0 0;
+    border: solid #09e6bc 3px;
+    font-size: 1.2em; }
 
   .aboutBTN {
-    display: none; }
+    display: block;
+    grid-area: about;
+    margin: 10% 0 0 0;
+    border: solid #09e6bc 3px;
+    font-size: 1.2em; }
 
   .projectsBTN {
-    display: none; }
+    display: block;
+    grid-area: projects;
+    margin: 10% 0 0 0;
+    border: solid #09e6bc 3px;
+    font-size: 1.2em; }
 
   .contactsBTN {
-    display: none; }
+    display: block;
+    grid-area: contacts;
+    margin: 10% 0 0 0;
+    border: solid #09e6bc 3px;
+    font-size: 1.2em; }
+
+  .menuBTN {
+    grid-area: menu;
+    width: 60%;
+    height: 50%;
+    margin: 20% 5% 5% 15%;
+    border: solid #09e6bc 3px; }
+
+  .closeBTN {
+    grid-area: close;
+    display: none;
+    width: 60%;
+    height: 50%;
+    margin: 20% 5% 5% 15%;
+    border: solid #09e6bc 2px; }
 
   .menuBTN {
     grid-area: menu;
@@ -1177,8 +1258,15 @@
     width: 100%;
     height: 10%;
     display: grid;
-    grid-template-areas: ' home . tech about projects contacts .';
-    grid-template-columns: 0.8fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-areas: ' home . btnBox .';
+    grid-template-columns: 0.8fr 1fr 2fr 0.1fr;
+    grid-template-rows: 0.5fr; }
+
+  .headerButtonsBox {
+    grid-area: btnBox;
+    display: grid;
+    grid-template-areas: 'tech about projects contacts';
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 0.5fr; }
 
   .homeBTN {
@@ -1227,6 +1315,9 @@
     height: 50%;
     margin: 20% 10% 5% 10%;
     border: solid #09e6bc 3px; }
+
+  .closeBTN {
+    display: none; }
 
   .introBlock {
     grid-area: intro;
@@ -1784,8 +1875,15 @@
     width: 100%;
     height: 10%;
     display: grid;
-    grid-template-areas: ' home . tech about projects contacts .';
-    grid-template-columns: 0.8fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-areas: ' home . btnBox .';
+    grid-template-columns: 0.8fr 1fr 2fr 0.1fr;
+    grid-template-rows: 0.5fr; }
+
+  .headerButtonsBox {
+    grid-area: btnBox;
+    display: grid;
+    grid-template-areas: 'tech about projects contacts';
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 0.5fr; }
 
   .homeBTN {
@@ -1834,6 +1932,9 @@
     height: 50%;
     margin: 20% 10% 5% 10%;
     border: solid #09e6bc 3px; }
+
+  .closeBTN {
+    display: none; }
 
   .introBlock {
     grid-area: intro;
@@ -2392,8 +2493,15 @@
     width: 100%;
     height: 10%;
     display: grid;
-    grid-template-areas: ' home . tech about projects contacts .';
-    grid-template-columns: 0.8fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-areas: ' home . btnBox .';
+    grid-template-columns: 0.8fr 1fr 2fr 0.1fr;
+    grid-template-rows: 0.5fr; }
+
+  .headerButtonsBox {
+    grid-area: btnBox;
+    display: grid;
+    grid-template-areas: 'tech about projects contacts';
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 0.5fr; }
 
   .homeBTN {
@@ -2442,6 +2550,9 @@
     height: 50%;
     margin: 20% 10% 5% 10%;
     border: solid #09e6bc 3px; }
+
+  .closeBTN {
+    display: none; }
 
   .introBlock {
     grid-area: intro;

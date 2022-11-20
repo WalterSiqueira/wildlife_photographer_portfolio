@@ -8,9 +8,9 @@ import SassIcon from '../../Assets/images/sass.png';
 import JavascriptIcon from '../../Assets/images/java-script.png';
 import CssIcon from '../../Assets/images/css.png';
 import HtmlIcon from '../../Assets/images/html-5.png';
-function ProjectSection() {
+function ProjectSection({projectsId}) {
   return (
-    <section className='projectsBlock'>
+    <section ref={projectsId} className='projectsBlock'>
         <h2 className='projectsTitle'>Projects</h2>
         <div className='noteAppBlock'>
           <img className='noteImg'src={noteApp}/> 

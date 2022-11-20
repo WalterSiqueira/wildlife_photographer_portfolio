@@ -3,9 +3,9 @@ import twitterIcon from '../../Assets/images/twitter.png';
 import linkedinIcon from '../../Assets/images/linkedin.png';
 import githubIcon from '../../Assets/images/github.png';
 
-function ContactSection() {
+function ContactSection({contactsId}) {
   return (
-    <section className='contactsBlock'>
+    <section ref={contactsId} className='contactsBlock'>
       <h2 className='contactsTitle'>Contacts</h2>
       <h3 className='contactsDescription'>I'm available for work!
           Please send me a message if you are interested!

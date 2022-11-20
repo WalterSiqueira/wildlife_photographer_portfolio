@@ -4,9 +4,9 @@ import SassIcon from '../../Assets/images/sass.png';
 import JavascriptIcon from '../../Assets/images/java-script.png';
 import CssIcon from '../../Assets/images/css.png';
 import HtmlIcon from '../../Assets/images/html-5.png';
-function TechSection() {
+function TechSection({techId}) {
   return (
-    <section className='techBlock'>
+    <section ref={techId} className='techBlock'>
       <h2 className='techTitle'>Technologies</h2>
       <div className='reactBlock'>
         <img className='reactImg' src={ReactIcon}/> 

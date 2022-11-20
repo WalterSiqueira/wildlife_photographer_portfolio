@@ -36,10 +36,18 @@
       height: 10%;
       display: grid;
       grid-template-areas: 
-        ' home . tech about projects contacts .';
-      grid-template-columns:  0.8fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+        ' home . btnBox .';
+      grid-template-columns:  0.8fr 1fr 2fr 0.1fr;
       grid-template-rows: 0.5fr;
     }
+      .headerButtonsBox {
+        grid-area: btnBox;
+        display: grid;
+        grid-template-areas: 
+          'tech about projects contacts';
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr;
+      }
       .homeBTN {
         width: 95%;
         height: 60.34%;
@@ -86,6 +94,9 @@
         height: 50%;
         margin: 20% 10% 5% 10%;
         border: solid #09e6bc 3px;
+      }
+      .closeBTN {
+        display: none;
       }
     .introBlock {
       grid-area: intro;
