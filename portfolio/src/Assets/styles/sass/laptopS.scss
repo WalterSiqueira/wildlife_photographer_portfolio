@@ -1,0 +1,696 @@
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  * {
+    margin: 0;
+    border: none;
+    padding: 0;
+    font-family: 'PT-sans';
+    background-color: #1494d9;
+    color: white;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  } 
+  .mainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+      '.'
+      'intro'
+      'projects'
+      'about'
+      'tech'
+      'contacts'
+      '.'
+      'footer';
+    grid-template-columns: auto;
+    grid-template-rows: 0.05fr 0.4fr 0.5fr 0.15fr 0.65fr 0.2fr 0.1fr 0.043fr;
+  }
+    .headerBlock {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 10%;
+      display: grid;
+      grid-template-areas: 
+        ' home . btnBox .';
+      grid-template-columns:  0.8fr 1fr 2fr 0.1fr;
+      grid-template-rows: 0.5fr;
+    }
+      .headerButtonsBox {
+        grid-area: btnBox;
+        display: grid;
+        grid-template-areas: 
+          'tech about projects contacts';
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr;
+      }
+      .homeBTN {
+        width: 95%;
+        height: 60.34%;
+        margin: 6% 0 0 5%;
+        border: solid #09e6bc 3px; 
+        font-size: 1.8em;
+      }
+      .techBTN {
+        width: 97%;
+        height: 60.39%;
+        grid-area: tech;
+        margin: 10% 0 0 0 ;
+        border: solid #09e6bc 3px;
+        font-size: 1.4em;
+      }
+      .aboutBTN {
+        width: 95%;
+        height: 60.39%;
+        grid-area: about;
+        margin: 10% 0 0 0;
+        border: solid #09e6bc 3px;
+        font-size: 1.4em;
+      }
+      .projectsBTN {
+        width: 95%;
+        height: 60.39%;
+        grid-area: projects;
+        margin: 10% 0 0 0;
+        border: solid #09e6bc 3px;
+        font-size: 1.4em;
+      }
+      .contactsBTN {
+        width: 95%;
+        height: 60.39%;
+        grid-area: contacts;
+        margin: 10% 0 0 0;
+        border: solid #09e6bc 3px;
+        font-size: 1.4em;
+      }
+      .menuBTN {
+        display: none;
+        grid-area: menu;
+        width: 60%;
+        height: 50%;
+        margin: 20% 10% 5% 10%;
+        border: solid #09e6bc 3px;
+      }
+      .closeBTN {
+        display: none;
+      }
+    .introBlock {
+      grid-area: intro;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-areas:
+        '. . .'
+        '. greetings .'
+        '. name .'
+        '. description .'
+        '. . .';
+      grid-template-columns: 0.1fr 2fr 0.1fr;
+      grid-template-rows: 0.5fr 0.05fr 0.05fr 0.1fr 0.3fr;
+    }
+      .introGreeting {
+        grid-area: greetings;
+        font-size: 2em;
+        text-align: left;
+      }
+      .introName {
+        grid-area: name;
+        font-size: 3em;
+        text-align: left;
+        color: #f9f871;
+      }
+      .introDescription{
+        grid-area: description;
+        font-size: 1.6em;
+        text-align: left;
+      }
+    .projectsBlock {
+      grid-area: projects;
+      display: grid;
+      grid-template-areas: 
+        '. . . .'
+        '.  title title  .'
+        '. todo calculator .'
+        '. landing tip .'
+        '. . . .';
+      grid-template-columns: 0.1fr  1fr 1fr  0.1fr;
+      grid-template-rows: 0.1fr 0.5fr 2fr 2fr 0.1fr;
+      width: 100%;
+      height: 100%;
+      grid-gap: 1%;
+    }
+      .projectsTitle {
+          grid-area: title;
+          text-align: center;
+          padding: 12% 0 0 0;
+          font-size: 2.8em;
+          color: #f9f871;
+      }
+      .noteAppBlock {
+        grid-area: todo;
+        background-color: white;
+        border: solid #09e6bc 3px;
+        border-radius: 2vh;
+        display: grid;
+        grid-template-areas: 
+          'image'
+          'title'
+          'description'
+          'technologies'
+          'techIcons'
+          'liveBTN'
+          '.'
+          'githubBTN'
+          '.';
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 0.3fr 0.7fr 0.3fr 0.7fr 0.3fr 0.1fr 0.3fr 0.1fr;
+      }
+        .noteImg {
+          grid-area: image;
+          width: 100%;
+          height: 100%;
+        }
+        .noteTitle {
+          grid-area: title;
+          font-size: 1.4em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .noteDescription {
+          grid-area: description;
+          font-size: 1.2em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .noteSubtitle {
+          grid-area: technologies;
+          font-size: 1.3em;
+          text-align: left;
+          background-color: white;
+          color: black;
+        }
+        .noteButtonsBlock {
+          grid-area: techIcons;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+          background-color: white;
+        }
+        .noteButtonsBlock *{background-color: white;}
+        .noteLiveBtn {
+          grid-area: liveBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh;
+        }
+        .noteGithubBtn {
+          grid-area: githubBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh; 
+        }
+
+      .calcBlock {
+        grid-area: calculator;
+        background-color: white;
+        border: solid #09e6bc 3px;
+        border-radius: 2vh;
+        display: grid;
+        grid-template-areas: 
+          'image'
+          'title'
+          'description'
+          'technologies'
+          'techIcons'
+          'liveBTN'
+          '.'
+          'githubBTN'
+          '.';
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 0.3fr 0.7fr 0.3fr 0.7fr 0.3fr 0.1fr 0.3fr 0.1fr;
+      }
+        .calcImg {
+          grid-area: image;
+          width: 100%;
+          height: 100%;
+        }
+        .calcTitle {
+          grid-area: title;
+          font-size: 1.4em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .calcDescription {
+          grid-area: description;
+          font-size: 1.2em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .calcSubtitle {
+          grid-area: technologies;
+          font-size: 1.3em;
+          text-align: left;
+          background-color: white;
+          color: black;
+        }
+        .calcButtonsBlock {
+          grid-area: techIcons;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+          background-color: white;
+        }
+        .calcButtonsBlock *{background-color: white;}
+        .calcLiveBtn {
+          grid-area: liveBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh;
+        }
+        .calcGithubBtn {
+          grid-area: githubBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh; 
+        }
+      .fyloBlock {
+        grid-area: landing;
+        background-color: white;
+        border: solid #09e6bc 3px;
+        border-radius: 2vh;
+        display: grid;
+        grid-template-areas: 
+          'image'
+          'title'
+          'description'
+          'technologies'
+          'techIcons'
+          'liveBTN'
+          '.'
+          'githubBTN'
+          '.';
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 0.3fr 0.7fr 0.3fr 0.7fr 0.3fr 0.1fr 0.3fr 0.1fr;
+      }
+        .fyloImg {
+          grid-area: image;
+          width: 100%;
+          height: 100%;
+        }
+        .fyloTitle {
+          grid-area: title;
+          font-size: 1.4em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .fyloDescription {
+          grid-area: description;
+          font-size: 1.2em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .fyloSubtitle {
+          grid-area: technologies;
+          font-size: 1.3em;
+          text-align: left;
+          background-color: white;
+          color: black;
+        }
+        .fyloButtonsBlock {
+          grid-area: techIcons;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+          background-color: white;
+        }
+        .fyloButtonsBlock *{background-color: white;}
+        .fyloLiveBtn {
+          grid-area: liveBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh;
+        }
+        .fyloGithubBtn {
+          grid-area: githubBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh; 
+        }
+      .tipBlock {
+        grid-area: tip;
+        background-color: white;
+        border: solid #09e6bc 3px;
+        border-radius: 2vh;
+        display: grid;
+        grid-template-areas: 
+          'image'
+          'title'
+          'description'
+          'technologies'
+          'techIcons'
+          'liveBTN'
+          '.'
+          'githubBTN'
+          '.';
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 0.3fr 0.5fr 0.3fr 0.7fr 0.3fr 0.1fr 0.3fr 0.1fr;
+      }
+        .tipImg {
+          grid-area: image;
+          width: 100%;
+          height: 100%;
+        }
+        .tipTitle {
+          grid-area: title;
+          font-size: 1.4em;
+          text-align: center;
+          background-color: white;
+          color: black;
+        }
+        .tipDescription {
+          grid-area: description;
+          font-size: 1.2em;
+          text-align: center;
+          background-color: white;
+          color: black;
+          margin: 5% 0 0 0;
+        }
+        .tipSubtitle {
+          grid-area: technologies;
+          font-size: 1.3em;
+          text-align: left;
+          background-color: white;
+          color: black;
+        }
+        .tipButtonsBlock {
+          grid-area: techIcons;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+          background-color: white;
+        }
+        .tipButtonsBlock *{background-color: white;}
+        .tipLiveBtn {
+          grid-area: liveBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh;
+        }
+        .tipGithubBtn {
+          grid-area: githubBTN;
+          background-color: #1494d9; 
+          color: white;
+          width: 50%;
+          height: 100%;
+          margin: 0 0 0 25%;
+          font-size: 1.3em;
+          border-radius: 1vh; 
+        }
+    .aboutBlock {
+      grid-area: about;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-areas:
+        '. title title .'
+        '. description description .'
+        '. subtitle subtitle .'
+        '. contacts . .';
+      grid-template-columns: 0.1fr 2fr 1fr 0.1fr;
+      grid-template-rows: 0.03fr 0.1fr 0.03fr 0.1fr;
+    }
+      .aboutTitle {
+        grid-area: title;
+        text-align: center;
+        font-size: 2.8em;
+        color: #f9f871;
+      }
+      .aboutDescription {
+        grid-area: description;
+        text-align: center;
+        font-size: 1.6em;
+      }
+      .aboutSubtitle {
+        grid-area: subtitle;
+        font-size: 1.4em;
+      }
+      .aboutExternalButtons {
+        grid-area: contacts;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+      }
+    .techBlock {
+      grid-area: tech;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-areas:
+        '. . title . .'
+        '. react javascript sass .'
+        '. css . html .';
+      grid-template-rows: 0.02fr 0.5fr 0.5fr 0.5fr 0.1fr;
+      grid-template-columns: 0.1fr 1.5fr 1.5fr 1.5fr 0.1fr;
+      grid-row-gap: 1%;
+      grid-column-gap: 3%;
+    }
+      .techTitle {
+        grid-area: title;
+        text-align: center;
+        font-size: 2.8em;
+        color: #f9f871;
+      }
+      .reactBlock {
+        grid-area: react;
+        display: grid;
+        grid-template-areas: 
+          'icon'
+          'title'
+          'text';
+        grid-template-columns: auto;
+        grid-template-rows: 0.4fr 0.1fr 0.3fr; 
+        border: solid #09e6bc 3px;
+        padding: 1%;
+        
+      }
+        .reactImg {
+          grid-area: icon;
+          width: 30%;
+          height: 60%;
+          margin: 10% 0 0 0;
+        }
+        .reactTitle {
+          grid-area: title;
+          font-size: 1.8em;
+          text-align: left;
+        }
+        .reactDescription {
+          grid-area: text; 
+          font-size: 1.4em;
+          text-align: left;
+        }
+      .JavascriptBlock {
+        grid-area: javascript;
+        display: grid;
+        grid-template-areas: 
+          'icon'
+          'title'
+          'text';
+        grid-template-columns: auto;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr; 
+        border: solid #09e6bc 3px;
+        padding: 1%;
+      }
+        .javascriptImg {
+          grid-area: icon;
+          width: 30%;
+          height: 60%;
+          margin: 10% 0 0 0;
+        }
+        .javascriptTitle {
+          grid-area: title;
+          font-size: 1.8em;
+          text-align: left;
+        }
+        .javascriptDescription {
+          grid-area: text; 
+          font-size: 1.4em;
+          text-align: left;
+        }
+      .sassBlock {
+        grid-area: sass;
+        display: grid;
+        grid-template-areas: 
+          'icon'
+          'title'
+          'text';
+        grid-template-columns: auto;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr; 
+        border: solid #09e6bc 3px;
+        padding: 1%;
+      }
+        .sassImg {
+          grid-area: icon;
+          width: 30%;
+          height: 60%;
+          margin: 10% 0 0 0;
+        }
+        .sassTitle {
+          grid-area: title;
+          font-size: 1.8em;
+          text-align: left;
+        }
+        .sassDescription {
+          grid-area: text; 
+          font-size: 1.4em;
+          text-align: left;
+        }
+      .cssBlock {
+        grid-area: css;
+        display: grid;
+        grid-template-areas: 
+          'icon'
+          'title'
+          'text';
+        grid-template-columns: auto;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr; 
+        border: solid #09e6bc 3px;
+        padding: 1%;
+      }
+        .cssImg {
+          grid-area: icon;
+          width: 30%;
+          height: 60%;
+          margin: 10% 0 0 0;
+        }
+        .cssTitle {
+          grid-area: title;
+          font-size: 1.8em;
+          text-align: left;
+        }
+        .cssDescription {
+          grid-area: text; 
+          font-size: 1.4em;
+          text-align: left;
+        }
+      .htmlBlock {
+        grid-area: html;
+        display: grid;
+        grid-template-areas: 
+          'icon'
+          'title'
+          'text';
+        grid-template-columns: auto;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr; 
+        border: solid #09e6bc 3px;
+        padding: 1%;
+      }
+        .htmlImg {
+          grid-area: icon;
+          width: 30%;
+          height: 60%;
+          margin: 10% 0 0 0;
+        }
+        .htmlTitle {
+          grid-area: title;
+          font-size: 1.8em;
+          text-align: left;
+        }
+        .htmlDescription {
+          grid-area: text; 
+          font-size: 1.4em;
+          text-align: left;
+        }
+    .contactsBlock {
+      grid-area: contacts;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-areas:
+        '. title .'
+        '. description .'
+        '. contacts .';
+      grid-template-columns: 0.1fr 1fr 0.1fr;
+      grid-template-rows:  0.3fr 0.5fr 0.5fr ;
+      grid-row-gap: 5%;
+    }
+      .contactsTitle {
+        grid-area: title;
+        text-align: center;
+        font-size: 2.8em;
+        color: #f9f871;
+      }
+      .contactsDescription {
+        grid-area: description;
+        font-size: 1.6em;
+        text-align: center;
+      }
+      .contactsExternalButtons {
+        grid-area: contacts;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center; 
+      }
+    .footerBlock {
+      grid-area: footer;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-areas: 
+        '. copyright . icons .';
+      grid-template-columns: 0.1fr 1.5fr 0.3fr 1fr 0.1fr;
+      grid-template-rows: 0.1fr;
+      justify-content: space-evenly;
+    } 
+      .footerCopyright {
+        font-size: 1em;
+        grid-area: copyright;
+        margin-top: 2.5%;
+      }
+      .footerExternalButtons {
+        grid-area: icons;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+}
