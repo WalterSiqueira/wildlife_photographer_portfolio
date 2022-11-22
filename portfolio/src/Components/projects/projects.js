@@ -23,8 +23,8 @@ function ProjectSection({projectsId}) {
             <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
             <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button className='noteLiveBtn'>Live Site</button>
-          <button className='noteGithubBtn'>Github</button>
+          <button href='https://todo-walter.vercel.app/' className='noteLiveBtn'>Live Site</button>
+          <button href='https://github.com/WalterSiqueira/To_do_app' className='noteGithubBtn'>Github</button>
         </div>
         <div className='calcBlock'>
           <img className='calcImg' src={SimpleCalc}/> 
@@ -37,8 +37,8 @@ function ProjectSection({projectsId}) {
             <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
             <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button className='calcLiveBtn'>Live Site</button>
-          <button className='calcGithubBtn'>Github</button>
+          <button href='https://calculator-walter.vercel.app/' className='calcLiveBtn'>Live Site</button>
+          <button href='https://github.com/WalterSiqueira/Calculator' className='calcGithubBtn'>Github</button>
         </div>
         <div className='fyloBlock'>
           <img className='fyloImg' src={FyloLanding}/> 
@@ -51,8 +51,8 @@ function ProjectSection({projectsId}) {
             <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
             <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button className='fyloLiveBtn'>Live Site</button>
-          <button className='fyloGithubBtn'>Github</button>
+          <button href='https://fylo-landing-two.vercel.app/' className='fyloLiveBtn'>Live Site</button>
+          <button href='https://github.com/WalterSiqueira/fylo-landing-page' className='fyloGithubBtn'>Github</button>
         </div>
         <div className='tipBlock'>
           <img className='tipImg' src={TipCalc}/> 
@@ -64,8 +64,8 @@ function ProjectSection({projectsId}) {
             <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
             <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button className='tipLiveBtn'>Live Site</button>
-          <button className='tipGithubBtn'>Github</button>
+          <button href='https://tip-calculator-orcin.vercel.app/' className='tipLiveBtn'>Live Site</button>
+          <button href='https://github.com/WalterSiqueira/tip_calculator' className='tipGithubBtn'>Github</button>
         </div>
     </section>
     
