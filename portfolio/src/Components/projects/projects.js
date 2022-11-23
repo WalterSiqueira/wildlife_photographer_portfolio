@@ -23,8 +23,8 @@ function ProjectSection({projectsId}) {
             <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
             <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button onclick=" window.open('https://todo-walter.vercel.app/')" target='_blank' className='noteLiveBtn'>Live Site</button>
-          <button onclick=" window.open('https://github.com/WalterSiqueira/To_do_app')" target='_blank' className='noteGithubBtn'>Github</button>
+          <a href='https://todo-walter.vercel.app/' target='_blank' className='noteLiveBtn'>Live Site</a>
+          <a href='https://github.com/WalterSiqueira/To_do_app' target='_blank' className='noteGithubBtn'>Github</a>
         </div>
         <div className='calcBlock'>
           <img className='calcImg' src={SimpleCalc}/> 
@@ -37,8 +37,8 @@ function ProjectSection({projectsId}) {
             <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
             <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button onclick=" window.open('https://calculator-walter.vercel.app/')" target='_blank' className='calcLiveBtn'>Live Site</button>
-          <button onclick=" window.open('https://github.com/WalterSiqueira/Calculator')" target='_blank' className='calcGithubBtn'>Github</button>
+          <a href='https://calculator-walter.vercel.app/' target='_blank' className='calcLiveBtn'>Live Site</a>
+          <a href='https://github.com/WalterSiqueira/Calculator' target='_blank' className='calcGithubBtn'>Github</a>
         </div>
         <div className='fyloBlock'>
           <img className='fyloImg' src={FyloLanding}/> 
@@ -51,8 +51,8 @@ function ProjectSection({projectsId}) {
             <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
             <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button onclick=" window.open('https://fylo-landing-two.vercel.app/')" target='_blank' className='fyloLiveBtn'>Live Site</button>
-          <button onclick=" window.open('https://github.com/WalterSiqueira/fylo-landing-page')" target='_blank' className='fyloGithubBtn'>Github</button>
+          <a href='https://fylo-landing-two.vercel.app/' target='_blank' className='fyloLiveBtn'>Live Site</a>
+          <a href='https://github.com/WalterSiqueira/fylo-landing-page' target='_blank' className='fyloGithubBtn'>Github</a>
         </div>
         <div className='tipBlock'>
           <img className='tipImg' src={TipCalc}/> 
@@ -64,8 +64,8 @@ function ProjectSection({projectsId}) {
             <button className='javascriptBtn'><img className='javascriptIcon' src={JavascriptIcon}/></button>
             <button className='cssBtn'><img className='cssIcon' src={CssIcon}/></button> 
           </div>
-          <button onclick=" window.open('https://tip-calculator-orcin.vercel.app/')" target='_blank' className='tipLiveBtn'>Live Site</button>
-          <button onclick=" window.open('https://github.com/WalterSiqueira/tip_calculator')" target='_blank' className='tipGithubBtn'>Github</button>
+          <a href='https://tip-calculator-orcin.vercel.app/' target='_blank' className='tipLiveBtn'>Live Site</a>
+          <a href='https://github.com/WalterSiqueira/tip_calculator' target='_blank' className='tipGithubBtn'>Github</a>
         </div>
     </section>
     

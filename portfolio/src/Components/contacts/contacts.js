@@ -12,9 +12,9 @@ function ContactSection({contactsId}) {
           email: walterbarbozasiqueira@gmail.com
       </h3>
       <div className='contactsExternalButtons'>
-        <button className='twitterBtn'><img className='twitterIcon' src={twitterIcon}/></button>
-        <button className='githubBtn'><img className='githubIcon' src={githubIcon}/></button>
-        <button className='linkedinBtn'><img className='linkedinIcon' src={linkedinIcon}/></button>
+        <a href='https://twitter.com/Walter__BS' target='_blank' className='twitterBtn'><img className='twitterIcon' src={twitterIcon}/></a>
+        <a href='https://github.com/waltersiqueira' target='_blank' className='githubBtn'><img className='githubIcon' src={githubIcon}/></a>
+        <a href='https://www.linkedin.com/in/walter-siqueira/' target='_blank' className='linkedinBtn'><img className='linkedinIcon' src={linkedinIcon}/></a>
       </div>
     </section>
   )

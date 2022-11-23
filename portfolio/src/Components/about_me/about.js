@@ -17,9 +17,9 @@ function AboutSection({aboutId}) {
       </p>
       <h3 className='aboutSubtitle'>Contact me through my social media!</h3>
       <div className='aboutExternalButtons'>
-        <button className='twitterBtn'><img className='twitterIcon' src={twitterIcon}/></button>
-        <button className='githubBtn'><img className='githubIcon' src={githubIcon}/></button>
-        <button className='linkedinBtn'><img className='linkedinIcon' src={linkedinIcon}/></button>
+        <a href='https://twitter.com/Walter__BS' target='_blank' className='twitterBtn'><img className='twitterIcon' src={twitterIcon}/></a>
+        <a href='https://github.com/waltersiqueira' target='_blank' className='githubBtn'><img className='githubIcon' src={githubIcon}/></a>
+        <a href='https://www.linkedin.com/in/walter-siqueira/' target='_blank' className='linkedinBtn'><img className='linkedinIcon' src={linkedinIcon}/></a>
       </div>
     </section>
   )

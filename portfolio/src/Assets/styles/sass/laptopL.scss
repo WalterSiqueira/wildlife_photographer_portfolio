@@ -213,6 +213,8 @@
           margin: 0 0 0 25%;
           font-size: 1.6em;
           border-radius: 1vh;
+          text-align: center;
+          text-decoration: none; 
         }
         .noteGithubBtn {
           grid-area: githubBTN;
@@ -222,7 +224,9 @@
           height: 100%;
           margin: 0 0 0 25%;
           font-size: 1.6em;
-          border-radius: 1vh; 
+          border-radius: 1vh;
+          text-align: center;
+          text-decoration: none;  
         }
 
       .calcBlock {
@@ -288,6 +292,8 @@
           margin: 0 0 0 25%;
           font-size: 1.6em;
           border-radius: 1vh;
+          text-align: center;
+          text-decoration: none; 
         }
         .calcGithubBtn {
           grid-area: githubBTN;
@@ -297,7 +303,9 @@
           height: 100%;
           margin: 0 0 0 25%;
           font-size: 1.6em;
-          border-radius: 1vh; 
+          border-radius: 1vh;
+          text-align: center;
+          text-decoration: none;  
         }
       .fyloBlock {
         grid-area: landing;
@@ -361,6 +369,8 @@
           margin: 0 0 0 25%;
           font-size: 1.6em;
           border-radius: 1vh;
+          text-align: center;
+          text-decoration: none; 
         }
         .fyloGithubBtn {
           grid-area: githubBTN;
@@ -370,7 +380,9 @@
           height: 100%;
           margin: 0 0 0 25%;
           font-size: 1.6em;
-          border-radius: 1vh; 
+          border-radius: 1vh;
+          text-align: center;
+          text-decoration: none;  
         }
       .tipBlock {
         grid-area: tip;
@@ -435,6 +447,8 @@
           margin: 0 0 0 25%;
           font-size: 1.6em;
           border-radius: 1vh;
+          text-align: center;
+          text-decoration: none; 
         }
         .tipGithubBtn {
           grid-area: githubBTN;
@@ -444,7 +458,9 @@
           height: 100%;
           margin: 0 0 0 25%;
           font-size: 1.6em;
-          border-radius: 1vh; 
+          border-radius: 1vh;
+          text-align: center;
+          text-decoration: none;  
         }
     .aboutBlock {
       grid-area: about;
