@@ -33,7 +33,7 @@
       left: 0;
       right: 0;
       width: 100%;
-      height: 10%;
+      height: 5%;
       display: grid;
       grid-template-areas: 
         ' home . btnBox .';
@@ -173,6 +173,7 @@
           grid-area: image;
           width: 100%;
           height: 100%;
+          border-radius: 5vh;
         }
         .noteTitle {
           grid-area: title;
@@ -208,24 +209,26 @@
           background-color: #1494d9; 
           color: white;
           width: 50%;
-          height: 100%;
+          height: 81.1%;
           margin: 0 0 0 25%;
           font-size: 1.3em;
           border-radius: 1vh;
           text-align: center;
           text-decoration: none; 
+          padding-top: 2%;
         }
         .noteGithubBtn {
           grid-area: githubBTN;
           background-color: #1494d9; 
           color: white;
           width: 50%;
-          height: 100%;
+          height: 81.1%;
           margin: 0 0 0 25%;
           font-size: 1.3em;
           border-radius: 1vh;
           text-align: center;
-          text-decoration: none;  
+          text-decoration: none; 
+          padding-top: 2%; 
         }
 
       .calcBlock {
@@ -251,6 +254,7 @@
           grid-area: image;
           width: 100%;
           height: 100%;
+          border-radius: 2vh;
         }
         .calcTitle {
           grid-area: title;
@@ -286,24 +290,26 @@
           background-color: #1494d9; 
           color: white;
           width: 50%;
-          height: 100%;
+          height: 81.1%;
           margin: 0 0 0 25%;
           font-size: 1.3em;
           border-radius: 1vh;
           text-align: center;
-          text-decoration: none; 
+          text-decoration: none;
+          padding-top: 2%; 
         }
         .calcGithubBtn {
           grid-area: githubBTN;
           background-color: #1494d9; 
           color: white;
           width: 50%;
-          height: 100%;
+          height: 81.1%;
           margin: 0 0 0 25%;
           font-size: 1.3em;
           border-radius: 1vh;
           text-align: center;
-          text-decoration: none;  
+          text-decoration: none;
+          padding-top: 2%;
         }
       .fyloBlock {
         grid-area: landing;
@@ -328,6 +334,7 @@
           grid-area: image;
           width: 100%;
           height: 100%;
+          border-radius: 5vh;
         }
         .fyloTitle {
           grid-area: title;
@@ -363,24 +370,26 @@
           background-color: #1494d9; 
           color: white;
           width: 50%;
-          height: 100%;
+          height: 81.1%;
           margin: 0 0 0 25%;
           font-size: 1.3em;
           border-radius: 1vh;
           text-align: center;
           text-decoration: none; 
+          padding-top: 2%;
         }
         .fyloGithubBtn {
           grid-area: githubBTN;
           background-color: #1494d9; 
           color: white;
           width: 50%;
-          height: 100%;
+          height: 81.1%;
           margin: 0 0 0 25%;
           font-size: 1.3em;
           border-radius: 1vh;
           text-align: center;
           text-decoration: none;  
+          padding-top: 2%;
         }
       .tipBlock {
         grid-area: tip;
@@ -405,6 +414,7 @@
           grid-area: image;
           width: 100%;
           height: 100%;
+          border-radius: 2vh;
         }
         .tipTitle {
           grid-area: title;
@@ -441,24 +451,26 @@
           background-color: #1494d9; 
           color: white;
           width: 50%;
-          height: 100%;
+          height: 81.1%;
           margin: 0 0 0 25%;
           font-size: 1.3em;
           border-radius: 1vh;
           text-align: center;
           text-decoration: none; 
+          padding-top: 2%;
         }
         .tipGithubBtn {
           grid-area: githubBTN;
           background-color: #1494d9; 
           color: white;
           width: 50%;
-          height: 100%;
+          height: 81.1%;
           margin: 0 0 0 25%;
           font-size: 1.3em;
           border-radius: 1vh;
           text-align: center;
           text-decoration: none;  
+          padding-top: 2%;
         }
     .aboutBlock {
       grid-area: about;
