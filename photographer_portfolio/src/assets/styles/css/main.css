@@ -1,0 +1,172 @@
+@media screen and (max-width: 320px) {
+  body {
+    background-color: black; }
+
+  * {
+    color: white; }
+
+  .mainBlock {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly; }
+
+  .presentationSection {
+    display: grid;
+    grid-template-areas: '. . .' '. title .' '. . .';
+    grid-template-columns: 0fr 1fr 0fr;
+    grid-template-rows: 0fr 1.5fr 0fr;
+    width: 100vw;
+    height: 100vh; }
+
+  .background_image {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw; }
+
+  .titleBox {
+    grid-area: title;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    opacity: 70%; }
+
+  .presentationTitle {
+    font-size: 2em;
+    color: #f9f871;
+    text-align: center;
+    margin: 80% 0 0 0; }
+
+  .aboutBlock {
+    margin: 0% 0 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: black; }
+
+  .kimImage {
+    width: 100vw;
+    height: 50vh;
+    margin: 5% 0 0 0; }
+
+  .aboutTitle {
+    text-align: center;
+    font-size: 1.6em;
+    color: #f9f871; }
+
+  .greetings {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 0 0 19%;
+    width: 66vw; }
+
+  .kimsName {
+    font-size: 1em;
+    margin: 0 0 0 2%;
+    color: #f9f871; }
+
+  .introductionText {
+    text-align: center; }
+
+  .ProjectsBlock {
+    width: 100vw;
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap; }
+
+  .PImg {
+    width: 50vw;
+    height: 30vh;
+    background-color: black; }
+
+  .leftArrow {
+    width: 10vw;
+    height: 10vh; }
+
+  .rightArrow {
+    width: 10vw;
+    height: 10vh; }
+
+  .cowImage {
+    display: none; }
+
+  .owlImage {
+    display: none; }
+
+  .arrowButtons {
+    position: absolute;
+    top: 206.2vh;
+    left: 37.4vw;
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: black;
+    opacity: 60%; }
+
+  .contactBlock {
+    background-color: black;
+    width: 100vw;
+    height: 60vh;
+    display: grid;
+    grid-template-areas: '. title .' '. form .';
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.3fr 2fr; }
+
+  .contactTitle {
+    grid-area: title;
+    text-align: center;
+    font-size: 1.6em;
+    color: #f9f871; }
+
+  .formBox {
+    grid-area: form;
+    display: grid;
+    grid-template-areas: '. . .' '. name .' '. email .' '. message .' '. SendButton .' '. . .';
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.3fr 0.3fr 0.6fr 0.2fr 0.1fr;
+    grid-row-gap: 5%;
+    background-color: #e2b659;
+    border-radius: 3vw; }
+
+  .nameInput {
+    grid-area: name;
+    color: black;
+    width: 96%;
+    border: solid black 3px;
+    border-radius: 3vh;
+    text-align: center; }
+
+  .emailInput {
+    grid-area: email;
+    color: black;
+    width: 96%;
+    border: solid black 3px;
+    border-radius: 3vh;
+    text-align: center; }
+
+  .submitBtn {
+    grid-area: SendButton;
+    color: black;
+    background-color: #f9f871;
+    border: solid white 3px;
+    border-radius: 3vh;
+    font-size: 1.4em;
+    width: 100%; }
+
+  .messageArea {
+    grid-area: message;
+    color: black;
+    width: 96%;
+    height: 10vh;
+    border: solid black 3px;
+    border-radius: 3vh;
+    text-align: center; } }
+
+/*# sourceMappingURL=main.css.map */
