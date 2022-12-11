@@ -116,13 +116,15 @@
       .contactBlock {
         background-color: black;
         width: 100vw;
-        height: 60vh;
+        height: 110vh;
         display: grid;
         grid-template-areas: 
           '. title .'
-          '. form .';
+          '. form .'
+          '. personalInfo .';
         grid-template-columns: 0.1fr 1fr 0.1fr;
-        grid-template-rows: 0.3fr 2fr;
+        grid-template-rows: 0.3fr 2fr 1fr;
+        grid-row-gap: 2vh;
       }
         .contactTitle {
           grid-area: title;
@@ -180,4 +182,42 @@
             border-radius: 3vh;
             text-align: center;
           }
+       .personalInfoBlock {
+          grid-area: personalInfo;
+          border: solid white 3px; 
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+       }  
+        .emailTitle {
+          font-size: 1.4em;
+          color: #f9f871; 
+        }  
+        .emailText {
+          text-align: center;
+          font-size: 1em;
+          color: white;
+        }
+        .locationTitle {
+          font-size: 1.4em;
+          color: #f9f871; 
+        }  
+        .locationText {
+          text-align: center;
+          font-size: 1em;
+          color: white;
+        }
+    .footerSection {
+      width: 98.75vw;
+      height: 10vh;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      border: solid #f9f871 2px;
+    }
+      .footerSection img {
+        width: 10vw;
+        height: 5vh;
+        margin: 5% 0 0 0;
+      }
 }
