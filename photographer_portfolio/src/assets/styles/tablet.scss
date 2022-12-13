@@ -1,0 +1,235 @@
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+  * {
+    color: white;
+  }
+  .mainBlock {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+  }
+  .presentationSection {
+    display: grid;
+    grid-template-areas: 
+      '. . .'
+      '. title .'
+      '. . .';
+    grid-template-columns: 0fr 1fr 0fr;
+    grid-template-rows: 0fr 1.5fr 0fr;
+    width: 100vw;
+    height: 100vh;
+  }
+    .background_image {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+    } 
+    .titleBox {
+      grid-area: title;
+      width: 100vw;
+      height: 100%;
+      background-color: black;
+      opacity: 70%;
+    }
+    .presentationTitle {
+      font-size: 2.2em;
+      color: #f9f871;
+      text-align: center;
+      margin: 50vh 0 0 0;
+    }
+  .aboutBlock {
+    display: grid;
+    grid-template-areas:
+      '. . . .'
+      '. image title .'
+      '. image greetings .'
+      '. image introText .'
+      '. . . .';
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.3fr 0.3fr 0.7fr 0.1fr;
+    background-color: black;
+  }
+    .kimImage {
+      grid-area: image;
+      width: 30vw;
+      height: 40vh;
+      margin: 5% 0 0 0;
+    }
+    .aboutTitle {
+      grid-area: title;
+      text-align: center;
+      font-size: 1.8em;
+      color: #f9f871;
+    }
+    .greetings {
+      grid-area: greetings;
+      text-align: center;
+      display: flex;
+      flex-flow: row wrap;
+      margin: 4% 0 0 27%;
+      width: 66vw;
+      font-size: 1.6em;
+    }
+      .kimsName {
+        font-size: 1em;
+        margin:0 0 0 2%;
+        color: #f9f871;
+      }
+      .introductionText {
+        grid-area: introText;
+        text-align: center;
+        font-size: 1.4em;
+      }
+    .ProjectsBlock {
+      width: 100vw;
+      height: 40vh;
+      background-color: black;
+      display: flex;
+      flex-flow: row wrap;
+    }
+      .PImg {
+        width: 40vw;
+        height: 30vh;
+        background-color: black;
+        padding: 5%;
+      }
+      .leftArrow {
+        width: 10vw;
+        height: 10vh;
+      }
+      .rightArrow {
+        width: 10vw;
+        height: 10vh;
+      }
+      .cowImage {
+        display: none;
+      }
+      .owlImage {
+        display: none;
+      }
+      .arrowButtons {
+        position: absolute;
+        top: 175vh;
+        left: 37.4vw;
+        width: 25vw;
+        height: 10vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        background-color: black;
+        opacity: 60%;
+      }
+      .contactBlock {
+        background-color: black;
+        width: 100vw;
+        height: 90vh;
+        display: grid;
+        grid-template-areas: 
+          '. title title .'
+          '. form personalInfo .';
+        grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+        grid-template-rows: 0.2fr 0.6fr;
+        grid-column-gap: 2vh;
+      }
+        .contactTitle {
+          margin: 7% 0 0 0;
+          grid-area: title;
+          text-align: center;
+          font-size: 1.8em;
+          color: #f9f871;
+        }
+        .formBox {
+          grid-area: form;
+          display: grid;
+          grid-template-areas:
+            '. . .'
+            '. name .'
+            '. email .'
+            '. message .'
+            '. SendButton .'
+            '. . .';
+          grid-template-columns: 0.1fr 1fr 0.1fr;
+          grid-template-rows: 0.1fr 0.3fr 0.3fr 0.6fr 0.2fr 0.1fr;
+          grid-row-gap: 5%;
+          background-color: #e2b659;
+          border-radius: 3vw;
+        }
+          .nameInput {
+            grid-area: name;
+            color: black;
+            width: 96%;
+            border: solid black 3px;
+            border-radius: 3vh;
+            text-align: center;
+          }
+          .emailInput {
+            grid-area: email;
+            color: black;
+            width: 96%;
+            border: solid black 3px;
+            border-radius: 3vh;
+            text-align: center;
+          }
+          .submitBtn {
+            grid-area: SendButton;
+            color: black;
+            background-color: #f9f871;
+            border: solid white 3px;
+            border-radius: 3vh;
+            font-size: 1.4em;
+            width: 100%;
+          }
+          .messageArea {
+            grid-area: message;
+            color: black;
+            width: 96%;
+            height: 10vh;
+            border: solid black 3px;
+            border-radius: 3vh;
+            text-align: center;
+          }
+       .personalInfoBlock {
+          grid-area: personalInfo;
+          border: solid white 3px; 
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+       }  
+        .emailTitle {
+          font-size: 1.4em;
+          color: #f9f871; 
+        }  
+        .emailText {
+          text-align: center;
+          font-size: 1em;
+          color: white;
+        }
+        .locationTitle {
+          font-size: 1.4em;
+          color: #f9f871; 
+        }  
+        .locationText {
+          text-align: center;
+          font-size: 1em;
+          color: white;
+        }
+    .footerSection {
+      width: 99.5vw;
+      height: 10vh;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      border: solid #f9f871 2px;
+    }
+      .footerSection img {
+        width: 8vw;
+        height: 7vh;
+        margin: 1% 0 0 0;
+      }
+}
