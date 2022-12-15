@@ -43,7 +43,7 @@
   .aboutBlock {
     display: grid;
     grid-template-areas: '. . . .' '. image title .' '. image greetings .' '. image introText .' '. . . .';
-    grid-template-columns: 0.1fr 3fr 0.5fr 0.1fr;
+    grid-template-columns: 0.1fr 1.5fr 1fr 0.1fr;
     grid-template-rows: 0.1fr 0.3fr 0.3fr 0.7fr 0.1fr;
     background-color: black; }
 
@@ -63,9 +63,10 @@
     grid-area: greetings;
     text-align: center;
     display: flex;
-    flex-flow: row wrap;
-    margin: 4% 0 0 27%;
-    width: 66vw;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 4% 0 0 3%;
+    width: 100%;
     font-size: 1.8em; }
 
   .kimsName {
@@ -263,7 +264,7 @@
   .aboutBlock {
     display: grid;
     grid-template-areas: '. . . .' '. image title .' '. image greetings .' '. image introText .' '. . . .';
-    grid-template-columns: 0.1fr 3fr 0.5fr 0.1fr;
+    grid-template-columns: 0.1fr 1.5fr 1fr 0.1fr;
     grid-template-rows: 0.1fr 0.3fr 0.3fr 0.7fr 0.1fr;
     background-color: black; }
 
@@ -284,8 +285,8 @@
     text-align: center;
     display: flex;
     flex-flow: row wrap;
-    margin: 4% 0 0 27%;
-    width: 66vw;
+    margin: 4% 0 0 10%;
+    width: 100%;
     font-size: 1.8em; }
 
   .kimsName {
@@ -296,7 +297,8 @@
   .introductionText {
     grid-area: introText;
     text-align: center;
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    margin-left: 3%; }
 
   .ProjectsBlock {
     width: 100vw;
@@ -448,7 +450,9 @@
   .mainBlock {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%; }
 
   .presentationSection {
     display: grid;
@@ -485,11 +489,13 @@
     grid-template-areas: '. . . .' '. image title .' '. image greetings .' '. image introText .' '. . . .';
     grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
     grid-template-rows: 0.1fr 0.3fr 0.3fr 0.7fr 0.1fr;
-    background-color: black; }
+    background-color: black;
+    width: 100%;
+    height: 100%; }
 
   .kimImage {
     grid-area: image;
-    width: 30vw;
+    width: 100%;
     height: 40vh;
     margin: 5% 0 0 0; }
 
@@ -504,9 +510,9 @@
     text-align: center;
     display: flex;
     flex-flow: row wrap;
-    margin: 4% 0 0 27%;
-    width: 66vw;
-    font-size: 1.6em; }
+    margin: 4% 0 0 10%;
+    width: 100%;
+    font-size: 1.4em; }
 
   .kimsName {
     font-size: 1em;
@@ -516,10 +522,10 @@
   .introductionText {
     grid-area: introText;
     text-align: center;
-    font-size: 1.4em; }
+    font-size: 1.2em; }
 
   .ProjectsBlock {
-    width: 100vw;
+    width: 100%;
     height: 40vh;
     background-color: black;
     display: flex;
